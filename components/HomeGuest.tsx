@@ -8,7 +8,7 @@ interface IProps {
 const HomeGuest = (props: IProps) => {
   const { imageUrl } = props;
   return (
-    <figure className="relative aspect-[420/319] h-44">
+    <figure className="relative aspect-[400/319] h-44">
       <Image src={imageUrl} alt="guest" fill className="object-cover" />
     </figure>
   );

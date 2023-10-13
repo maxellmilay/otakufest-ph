@@ -18,15 +18,15 @@ const Home = () => {
           Throwback Video
         </a>
       </section>
-      <section className="flex flex-col gap-10 min-h-screen justify-center items-center bg-site-blue-100/80 bg-guests bg-cover bg-center bg-blend-overlay">
+      <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-guests bg-cover bg-center bg-blend-overlay px-10 py-10">
         <h2>COSPLAY GUESTS</h2>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 justify-center items-center">
           {cosplayGuests.map((guest) => {
             return <HomeGuest key={guest} imageUrl={guest} />;
           })}
         </div>
         <h2>VTUBER GUESTS</h2>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 justify-center items-center">
           {vtuberGuests.map((guest) => {
             return <HomeGuest key={guest} imageUrl={guest} />;
           })}
