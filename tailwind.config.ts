@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         hero: "url('/images/background/hero-bg.png')",
+        guests: "url('/images/background/guests-bg.png')",
       },
       colors: {
         'site-blue': {
