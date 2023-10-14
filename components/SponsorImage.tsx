@@ -7,7 +7,7 @@ interface IProps {
   width?: string;
 }
 
-const HomeSponsor = (props: IProps) => {
+const SponsorImage = (props: IProps) => {
   const { imageUrl, aspect, width } = props;
   return (
     <figure className={`relative ${aspect} ${width}`}>
@@ -16,4 +16,4 @@ const HomeSponsor = (props: IProps) => {
   );
 };
 
-export default HomeSponsor;
+export default SponsorImage;

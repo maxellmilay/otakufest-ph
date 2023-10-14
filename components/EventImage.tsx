@@ -6,7 +6,7 @@ interface IProps {
   name: string;
 }
 
-const HomeEvent = (props: IProps) => {
+const EventImage = (props: IProps) => {
   const { imageUrl, name } = props;
   return (
     <div className="flex flex-col gap-2">
@@ -18,4 +18,4 @@ const HomeEvent = (props: IProps) => {
   );
 };
 
-export default HomeEvent;
+export default EventImage;

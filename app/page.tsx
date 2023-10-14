@@ -3,9 +3,9 @@ import Image from 'next/image';
 import ImageUrl from '@/enums/imageUrl';
 import ExternalLink from '@/enums/externalLinks';
 import { cosplayGuests, events, vtuberGuests } from '@/constants/lists';
-import HomeGuest from '@/components/HomeGuest';
-import HomeEvent from '@/components/HomeEvent';
-import HomeSponsor from '@/components/HomeSponsor';
+import HomeGuest from '@/components/GuestImage';
+import HomeEvent from '@/components/EventImage';
+import HomeSponsor from '@/components/SponsorImage';
 
 const Home = () => {
   return (
@@ -20,43 +20,7 @@ const Home = () => {
           Throwback Video
         </a>
       </section>
-      <section
-        id="guests"
-        className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-guests bg-cover bg-center bg-blend-overlay px-10 py-10"
-      >
-        <h2>COSPLAY GUESTS</h2>
-        <div className="flex flex-wrap gap-5 justify-center items-center">
-          {cosplayGuests.map((guest) => {
-            return <HomeGuest key={guest} imageUrl={guest} />;
-          })}
-        </div>
-        <h2>VTUBER GUESTS</h2>
-        <div className="flex flex-wrap gap-5 justify-center items-center">
-          {vtuberGuests.map((guest) => {
-            return <HomeGuest key={guest} imageUrl={guest} />;
-          })}
-        </div>
-      </section>
-      <section
-        id="shirt"
-        className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-shirt bg-cover bg-center bg-blend-overlay px-10 py-10"
-      >
-        <h2>OFFICIAL OF23 SHIRT</h2>
-        <figure className="relative aspect-[783/611] w-[70%] md:w-96">
-          <Image src={ImageUrl.SHIRT} alt="shirt" fill className="object-cover" />
-        </figure>
-      </section>
-      <section
-        id="events"
-        className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-events bg-center bg-blend-overlay px-10 py-10"
-      >
-        <h2>EVENTS</h2>
-        <div className="flex flex-wrap gap-7 justify-center items-center">
-          {events.map((event) => {
-            return <HomeEvent key={event.name} imageUrl={event.imageUrl} name={event.name} />;
-          })}
-        </div>
-      </section>
+      
       <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10">
         <h2>SPONSORS</h2>
         <div className="flex flex-wrap gap-10 justify-center">

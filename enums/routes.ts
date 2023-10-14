@@ -1,9 +1,9 @@
 enum Routes {
   HOME = '/',
-  GUESTS = '/#guests',
-  SHIRT = '/#shirt',
+  GUESTS = '/guests',
+  SHIRT = '/shirt',
   FAQS = '/faqs',
-  EVENTS = '/#events',
+  EVENTS = '/events',
   CONTACT_US = '/contact-us',
   UPDATES = '/updates',
   SUPPORT = '/support',

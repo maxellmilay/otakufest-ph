@@ -5,7 +5,7 @@ interface IProps {
   imageUrl: string;
 }
 
-const HomeGuest = (props: IProps) => {
+const GuestImage = (props: IProps) => {
   const { imageUrl } = props;
   return (
     <figure className="relative aspect-[400/319] h-44">
@@ -14,4 +14,4 @@ const HomeGuest = (props: IProps) => {
   );
 };
 
-export default HomeGuest;
+export default GuestImage;
