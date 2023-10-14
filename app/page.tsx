@@ -2,9 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import ImageUrl from '@/enums/imageUrl';
 import ExternalLink from '@/enums/externalLinks';
-import { cosplayGuests, events, vtuberGuests } from '@/constants/lists';
-import HomeGuest from '@/components/GuestImage';
-import HomeEvent from '@/components/EventImage';
 import HomeSponsor from '@/components/SponsorImage';
 
 const Home = () => {
