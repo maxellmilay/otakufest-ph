@@ -3,7 +3,7 @@ enum ExternalLink {
   FB = 'https://facebook.com/otakufestph',
   TWITTER = 'https://twitter.com/otakufestph',
   INSTAGRAM = 'https://www.instagram.com/otakufestph',
-  EMAIL = 'info@otakufestph.com',
+  EMAIL = 'https://www.gmail.com',
 }
 
 export default ExternalLink;

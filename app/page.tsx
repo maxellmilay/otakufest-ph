@@ -20,9 +20,9 @@ const Home = () => {
           Throwback Video
         </a>
       </section>
-      
+
       <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10">
-        <h2>SPONSORS</h2>
+        <h2>A Huge Thanks to Our Sponsors</h2>
         <div className="flex flex-wrap gap-10 justify-center">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col">
@@ -30,7 +30,7 @@ const Home = () => {
               <HomeSponsor imageUrl={ImageUrl.SM_SEASIDE} aspect="aspect-[400/92]" />
             </div>
             <div className="flex flex-wrap gap-10 justify-center">
-              <div className="flex flex-col justify-between">
+              <div className="flex flex-col gap-3">
                 <p>Presenters</p>
                 <HomeSponsor imageUrl={ImageUrl.PROFOOD} aspect="aspect-[246/248]" width="w-44" />
                 <HomeSponsor imageUrl={ImageUrl.PHOENIX} aspect="aspect-[250/251]" width="w-44" />
@@ -47,7 +47,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-3">
             <p>Minor Sponsors</p>
             <HomeSponsor imageUrl={ImageUrl.INKPLACE} aspect="aspect-[200/51]" width="w-36" />
             <HomeSponsor imageUrl={ImageUrl.HOBBIWORKZ} aspect="aspect-[200/100]" width="w-36" />
