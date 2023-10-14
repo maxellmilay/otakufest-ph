@@ -1,9 +1,9 @@
 enum ExternalLink {
   THROWBACK_VIDEO = 'https://facebook.com/otakufestph/posts/pfbid02XK5fta95TZiSTVnCuQ3ooGGxotjoafGujroyuid6UKjaMiMsbS4KEcD8bQaJ9r4Kl?mibextid=YxdKMJ',
-  FB = 'fb',
-  TWITTER = 'twt',
-  INSTAGRAM = 'insta',
-  EMAIL = 'email',
+  FB = 'https://facebook.com/otakufestph',
+  TWITTER = 'https://twitter.com/otakufestph',
+  INSTAGRAM = 'https://www.instagram.com/otakufestph',
+  EMAIL = 'info@otakufestph.com',
 }
 
 export default ExternalLink;
