@@ -1,9 +1,7 @@
 import TheHeader from '@/components/TheHeader';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import TheFooter from '@/components/TheFooter';
 
 export const metadata: Metadata = {
   title: 'Otakufest PH',
@@ -13,9 +11,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
+      <body className={`font-mochiy flex flex-col min-h-screen`}>
         <TheHeader />
         <main className="flex flex-col grow basis-0">{children}</main>
+        <TheFooter />
       </body>
     </html>
   );

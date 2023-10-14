@@ -8,18 +8,23 @@ const Home = () => {
   return (
     <>
       <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-hero bg-cover bg-center bg-blend-overlay pt-20">
-        <h2>CONNECTING THE WORLD, ONE HOBBY AT A TIME</h2>
+        <h2 className="text-2xl font-bangers">CONNECTING THE WORLD, ONE HOBBY AT A TIME</h2>
         <figure className="relative aspect-[656/442] w-[60%] md:w-72">
           <Image src={ImageUrl.VENUE} alt="venue" fill className="object-cover" />
         </figure>
-        <p>June 24-25, 2023 SM Seaside Cebu</p>
-        <a href={ExternalLink.THROWBACK_VIDEO} rel="noreferrer" target="_blank">
+        <p className="text-[0.5rem]">June 24-25, 2023 SM Seaside Cebu</p>
+        <a
+          href={ExternalLink.THROWBACK_VIDEO}
+          className="px-5 py-3 border border-white rounded-lg bg-gradient-to-br from-40% from-site-blue-200 to-site-blue-300 text-xs"
+          rel="noreferrer"
+          target="_blank"
+        >
           Throwback Video
         </a>
       </section>
 
-      <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10">
-        <h2>A Huge Thanks to Our Sponsors</h2>
+      <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10 text-site-blue-300 text-outline-white">
+        <h2 className="font-bangers">A Huge Thanks to Our Sponsors</h2>
         <div className="flex flex-wrap gap-10 justify-center">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col">

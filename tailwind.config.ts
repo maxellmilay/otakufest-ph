@@ -18,7 +18,13 @@ const config: Config = {
       colors: {
         'site-blue': {
           100: '#232942',
+          200: '#001760',
+          300: '#00BDFF',
         },
+      },
+      fontFamily: {
+        mochiy: ['Mochiy Pop P One', 'sans-serif'],
+        bangers: ['Bangers', 'sans-serif'],
       },
     },
   },
