@@ -2,6 +2,7 @@ import TheHeader from '@/components/TheHeader';
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import TheFooter from '@/components/TheFooter';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <TheHeader />
         <main className="flex flex-col grow basis-0">{children}</main>
+        <TheFooter />
       </body>
     </html>
   );
