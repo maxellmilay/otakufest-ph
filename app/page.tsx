@@ -24,7 +24,7 @@ const Home = () => {
       </section>
 
       <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10 text-site-blue-300 text-outline-white">
-        <h2 className="font-bangers">A Huge Thanks to Our Sponsors</h2>
+        <h2 className="font-bangers text-2xl">A Huge Thanks to Our Sponsors</h2>
         <div className="flex flex-wrap gap-10 justify-center">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col">
