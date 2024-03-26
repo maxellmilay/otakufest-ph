@@ -10,21 +10,18 @@ const config: Config = {
     extend: {
       backgroundImage: {
         hero: "url('/images/background/hero-bg.png')",
-        guests: "url('/images/background/guests-bg.png')",
-        shirt: "url('/images/background/shirt-bg.png')",
-        events: "url('/images/background/events-bg.png')",
-        sponsors: "url('/images/background/sponsors-bg.png')",
+        theme: "url('/images/theme-2024.png')",
       },
       colors: {
-        'site-blue': {
-          100: '#232942',
-          200: '#001760',
-          300: '#00BDFF',
+        'site': {
+          'main': '#c60004',
+          'secondary': '#FFFFFF',
         },
       },
       fontFamily: {
-        mochiy: ['Mochiy Pop P One', 'sans-serif'],
-        bangers: ['Bangers', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
+        yaldevi: ['Yaldevi', 'sans-serif'],
+        'montserrat-alt': ['Montserrat Alternates', 'sans-serif']
       },
     },
   },
