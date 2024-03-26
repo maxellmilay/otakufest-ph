@@ -13,9 +13,10 @@ const TheHeader = () => {
         OTAKUFEST 2023
       </Link>
       <nav className="hidden md:flex items-center gap-5 text-xs">
+        {/* Change this to anchor different sections of landing page
         <Link href={Routes.GUESTS}>Guests</Link>
         <Link href={Routes.SHIRT}>Shirt</Link>
-        <Link href={Routes.EVENTS}>Events</Link>
+        <Link href={Routes.EVENTS}>Events</Link> */}
         <Link href={Routes.FAQS}>FAQs</Link>
         <div className="bg-white px-5 py-3 rounded-lg">
           <Link
