@@ -1,9 +1,11 @@
-import React from "react";
-import Image from "next/image";
-import ImageUrl from "@/enums/imageUrl";
-import ExternalLink from "@/enums/externalLinks";
-import HomeSponsor from "@/components/SponsorImage";
-import EventDescription from "@/components/EventDescription";
+import React from 'react';
+import Image from 'next/image';
+import ImageUrl from '@/enums/imageUrl';
+import ExternalLink from '@/enums/externalLinks';
+import HomeSponsor from '@/components/SponsorImage';
+import EventDescription from '@/components/EventDescription';
+import ShirtsSection from '@/components/ShirtsSection';
+import VtuberSection from '@/components/VtuberSection';
 
 const Home = () => {
     return (
@@ -31,6 +33,18 @@ const Home = () => {
                 >
                     Throwback Video
                 </a>
+            </section>
+
+            <section>
+                <EventDescription />
+            </section>
+
+            <section>
+                <VtuberSection />
+            </section>
+
+            <section>
+                <ShirtsSection />
             </section>
 
             <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10 text-site-blue-300 text-outline-white">
