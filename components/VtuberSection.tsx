@@ -13,9 +13,9 @@ const VtuberSection = () => {
                 style={{ backgroundImage: `url(${ImageUrl.BACKGROUND2024})` }}
             >
                 <div className="flex h-full w-full items-center justify-between p-56 z-10">
-                    <div className="w-[30vh] text-[#C60001] mb-[30vh]">
+                    <div className="flex flex-col justify-center bg-white/[0.9] p-5 w-[35vh] text-[#C60001] mb-[25vh] rounded-lg">
                         <span className="font-bold text-xl">Ouro Kronii</span>
-                        <div className="flex flex-row items-center justify-between">
+                        <div className="flex flex-row w-full items-center justify-between">
                             <Image
                                 src={ImageUrl.YOUTUBEICON}
                                 alt="YouTube icon"
@@ -23,14 +23,17 @@ const VtuberSection = () => {
                                 width={80}
                                 height={80}
                             />
-                            <a href="https://www.youtube.com/@OuroKronii">
+                            <a
+                                href="https://www.youtube.com/@OuroKronii"
+                                className="text-sm"
+                            >
                                 Ouro Kronii Ch. hololive-EN
                             </a>
                         </div>
                     </div>
-                    <div className="w-[30vh] text-[#C60001] mt-[30vh]">
+                    <div className="flex flex-col justify-center bg-white/[0.9] p-5 w-[35vh] text-[#C60001] mt-[28vh] rounded-lg">
                         <span className="font-bold text-xl">Gawr Gura</span>
-                        <div className="flex flex-row items-center justify-between">
+                        <div className="flex flex-row w-full items-center justify-between">
                             <Image
                                 src={ImageUrl.YOUTUBEICON}
                                 alt="YouTube icon"
@@ -38,7 +41,10 @@ const VtuberSection = () => {
                                 width={80}
                                 height={80}
                             />
-                            <a href="https://www.youtube.com/@GawrGura">
+                            <a
+                                href="https://www.youtube.com/@GawrGura"
+                                className="text-sm"
+                            >
                                 Gawr Gura Ch. hololive-EN
                             </a>
                         </div>
