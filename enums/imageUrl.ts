@@ -36,6 +36,11 @@ enum ImageUrl {
     SM_SEASIDE = '/images/sponsors/sm-seaside.png',
     SUNSTAR = '/images/sponsors/sunstar.png',
     WORKPLACE_CAFE = '/images/sponsors/workplace-cafe.png',
+
+    BACKGROUND2024 = '/images/background/2024-custombg.png',
+    YOUTUBEICON = '/images/yt-icon.png',
+    GAWRGURA = '/images/guests/gawrgura.png',
+    OUROKRONII = '/images/guests/ourokronii.png',
 }
 
 export default ImageUrl;
