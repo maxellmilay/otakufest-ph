@@ -11,6 +11,7 @@ import GuestSection from '@/components/GuestSection';
 import ShirtsSection from '@/components/ShirtsSection';
 import VtuberSection from '@/components/VtuberSection';
 import EventSection from '@/components/EventSection';
+import SponsorSection from '@/components/SponsorSection';
 
 const Home = () => {
     return (
@@ -50,7 +51,7 @@ const Home = () => {
                 <EventDescription />
             </section>
 
-            <section>
+            <section id="guestSection">
                 <GuestSection />
             </section>
 
@@ -58,14 +59,19 @@ const Home = () => {
                 <VtuberSection />
             </section>
 
-            <section>
+            <section id="eventSection">
                 <EventSection />
             </section>
 
-            <section>
+            <section id="shirtSection">
                 <ShirtsSection />
             </section>
 
+            <section>
+                <SponsorSection />
+            </section>
+
+            {/*
             <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-sponsors bg-center bg-blend-overlay px-10 py-10 text-site-blue-300 text-outline-white">
                 <h2 className="font-bangers text-2xl">
                     A Huge Thanks to Our Sponsors
@@ -182,6 +188,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            */}
         </>
     );
 };

@@ -7,7 +7,7 @@ import { FaBars } from 'react-icons/fa';
 
 const TheHeader = () => {
     return (
-        <header className="bg-site-main fixed z-20 flex items-center h-20 w-screen px-10 justify-between">
+        <header className="bg-site-main fixed z-20 flex items-center h-16 w-screen px-10 justify-between">
             <Link
                 href={Routes.HOME}
                 className="flex items-center text-4xl font-bold"
@@ -22,13 +22,12 @@ const TheHeader = () => {
                 </figure>
                 OTAKUFEST
             </Link>
-            <nav className="hidden md:flex items-center gap-5 text-xs">
-                {/* Change this to anchor different sections of landing page
-        <Link href={Routes.GUESTS}>Guests</Link>
-        <Link href={Routes.SHIRT}>Shirt</Link>
-        <Link href={Routes.EVENTS}>Events</Link> */}
+            <nav className="hidden md:flex items-center gap-5 text-lg">
+                <Link href="#guestSection">Guests</Link>
+                <Link href="#shirtSection">Shirt</Link>
+                <Link href="#eventSection">Events</Link>
                 <Link href={Routes.FAQS}>FAQs</Link>
-                <div className="bg-white px-5 py-3 rounded-lg">
+                <div className="bg-white px-5 py-2 rounded-lg">
                     <Link
                         href={Routes.CONTACT_US}
                         className="border-lg text-site-main"
