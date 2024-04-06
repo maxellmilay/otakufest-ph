@@ -10,7 +10,7 @@ const EventImage = (props: IProps) => {
     const { imageUrl, name } = props;
     return (
         <div className="flex flex-col gap-2">
-            <figure className="relative aspect-[281/225] h-44">
+            <figure className="relative aspect-[4/3] w-[25rem] mx-[1.7rem] mt-16">
                 <Image
                     src={imageUrl}
                     alt="guest"
@@ -18,7 +18,7 @@ const EventImage = (props: IProps) => {
                     className="object-cover"
                 />
             </figure>
-            <p className="text-center text-xs">{name}</p>
+            <p className="text-center text-lg">{name}</p>
         </div>
     );
 };

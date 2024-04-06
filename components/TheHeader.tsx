@@ -1,16 +1,26 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
+import ImageUrl from '@/enums/imageUrl';
 import Routes from '@/enums/routes';
 import { FaBars } from 'react-icons/fa';
 
 const TheHeader = () => {
     return (
-        <header className="bg-site-blue-100/70 fixed z-10 flex items-center h-20 w-screen px-10 justify-between">
+        <header className="bg-site-main fixed z-20 flex items-center h-20 w-screen px-10 justify-between">
             <Link
                 href={Routes.HOME}
-                className="text-4xl font-bangers text-transparent bg-clip-text bg-gradient-to-r from-55% from-site-blue-200 to-site-blue-300 text-outline-white"
+                className="flex items-center text-4xl font-bold"
             >
-                OTAKUFEST 2023
+                <figure className="relative aspect-square w-14">
+                    <Image
+                        src={ImageUrl.LOGO2024_WHITE}
+                        alt="guest"
+                        fill
+                        className="object-cover"
+                    />
+                </figure>
+                OTAKUFEST
             </Link>
             <nav className="hidden md:flex items-center gap-5 text-xs">
                 {/* Change this to anchor different sections of landing page
@@ -21,7 +31,7 @@ const TheHeader = () => {
                 <div className="bg-white px-5 py-3 rounded-lg">
                     <Link
                         href={Routes.CONTACT_US}
-                        className="border-lg text-transparent bg-clip-text bg-gradient-to-r from-50% from-site-blue-200 to-site-blue-300"
+                        className="border-lg text-site-main"
                     >
                         Contact Us
                     </Link>

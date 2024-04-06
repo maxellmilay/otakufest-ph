@@ -37,6 +37,10 @@ enum ImageUrl {
     SUNSTAR = '/images/sponsors/sunstar.png',
     WORKPLACE_CAFE = '/images/sponsors/workplace-cafe.png',
 
+    LOGO2024 = '/images/logo-2024.png',
+    LOGO2024_WHITE = '/images/logo-2024-white.png',
+    CAROUSEL1 = '/images/background/hero-bg.png',
+    CAROUSEL2 = '/images/background/sponsors-bg.png',
     BACKGROUND2024 = '/images/background/2024-custombg.png',
     YOUTUBEICON = '/images/yt-icon.png',
     GAWRGURA = '/images/guests/gawrgura.png',

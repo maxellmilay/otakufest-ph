@@ -1,15 +1,25 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 import ImageUrl from '@/enums/imageUrl';
 import ExternalLink from '@/enums/externalLinks';
 import HomeSponsor from '@/components/SponsorImage';
+import HomeCarousel from '@/components/HomeCarousel';
 import EventDescription from '@/components/EventDescription';
+import GuestSection from '@/components/GuestSection';
 import ShirtsSection from '@/components/ShirtsSection';
 import VtuberSection from '@/components/VtuberSection';
+import EventSection from '@/components/EventSection';
 
 const Home = () => {
     return (
         <>
+            <section>
+                <HomeCarousel />
+            </section>
+
+            {/*
             <section className="flex flex-col gap-5 min-h-screen justify-center items-center bg-site-blue-100/80 bg-hero bg-cover bg-center bg-blend-overlay pt-20">
                 <h2 className="text-2xl font-bangers">
                     CONNECTING THE WORLD, ONE HOBBY AT A TIME
@@ -34,13 +44,22 @@ const Home = () => {
                     Throwback Video
                 </a>
             </section>
+            */}
 
             <section>
                 <EventDescription />
             </section>
 
             <section>
+                <GuestSection />
+            </section>
+
+            <section>
                 <VtuberSection />
+            </section>
+
+            <section>
+                <EventSection />
             </section>
 
             <section>

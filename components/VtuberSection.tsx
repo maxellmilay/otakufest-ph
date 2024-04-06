@@ -4,7 +4,7 @@ import ImageUrl from '@/enums/imageUrl';
 
 const VtuberSection = () => {
     return (
-        <div className="flex flex-col flex-grow items-center justify-around text-center bg-white h-[150vh] w-full pt-20">
+        <div className="flex flex-col flex-grow items-center justify-around text-center bg-white h-[150vh] w-full mb-40">
             <div className="flex flex-col text-[#C60001]">
                 <span className="text-8xl font-bold w-full">VTUBER GUESTS</span>
             </div>
