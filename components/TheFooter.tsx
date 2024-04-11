@@ -8,7 +8,7 @@ import ExternalLink from '@/enums/externalLinks';
 
 const TheFooter = () => {
     return (
-        <footer className="flex flex-col md:flex-row gap-3 bg-white text-black justify-center items-center p-5">
+        <footer className="flex flex-col md:flex-row gap-3 bg-white text-black justify-center items-center p-5 z-20">
             <figure className="relative aspect-[99/115] h-14">
                 <Image
                     src={ImageUrl.LOGO}
