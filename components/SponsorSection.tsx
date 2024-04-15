@@ -24,7 +24,7 @@ const SponsorSection = () => {
                                 width="w-64 md:w-96"
                             />
                         </div>
-                        <div className="flex flex-wrap gap-10 justify-stretch">
+                        <div className="flex flex-wrap justify-between">
                             <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
                                 <span className="text-left">Presenters</span>
                                 <HomeSponsor
