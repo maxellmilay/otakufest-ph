@@ -10,9 +10,9 @@ const TheHeader = () => {
         <header className="bg-site-main fixed z-20 flex items-center h-16 w-screen px-10 justify-between">
             <Link
                 href={Routes.HOME}
-                className="flex items-center text-4xl font-bold"
+                className="flex items-center text-2xl font-bold md:text-4xl"
             >
-                <figure className="relative aspect-square w-14">
+                <figure className="relative aspect-square w-8 md:w-14">
                     <Image
                         src={ImageUrl.LOGO2024_WHITE}
                         alt="guest"

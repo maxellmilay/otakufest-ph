@@ -4,10 +4,12 @@ import ImageUrl from '@/enums/imageUrl';
 
 const EventSection = () => {
     return (
-        <div className="flex flex-col items-center justify-around text-justify bg-[#C60001] w-full p-20">
+        <div className="flex flex-col items-center justify-around text-justify bg-[#C60001] w-full p-10 md:p-20">
             <div className="flex flex-col text-white">
-                <span className="text-8xl font-bold w-full">EVENTS</span>
-                <span className="text-xl w-full">
+                <span className="text-5xl md:text-8xl font-bold w-full">
+                    EVENTS
+                </span>
+                <span className="text-md md:text-xl w-full">
                     Knock, knock. Who’s there? Otakufest. Otakufest who?
                     Otakufest 2024! Charot. Unsa bitaw description ari? Happy
                     birthday, Maxell Gahit Milay. Knock, knock. Who’s there?

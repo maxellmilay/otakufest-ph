@@ -16,7 +16,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`font-mochiy flex flex-col min-h-screen bg-site-secondary`}
+                className={`font-mochiy flex flex-col min-h-screen overflow-x-hidden bg-site-secondary`}
             >
                 <TheHeader />
                 <main className="flex flex-col grow basis-0">{children}</main>
