@@ -6,22 +6,22 @@ import HomeSponsor from '@/components/SponsorImage';
 const SponsorSection = () => {
     return (
         <div
-            className="flex flex-col min-h-[85rem] text-center w-full py-20 relative bg-cover bg-center overflow-hidden"
+            className="flex flex-col min-h-[85rem] text-center w-full relative bg-cover bg-center overflow-hidden py-10 md:py-20"
             style={{ backgroundImage: `url(${ImageUrl.BACKGROUND2024})` }}
         >
-            <span className="text-site-main text-8xl font-bold w-full">
+            <span className="text-site-main text-5xl md:text-8xl font-bold w-full">
                 SPONSORS
             </span>
 
-            <div className="flex flex-col gap-5 min-h-screen justify-center items-center py-10 font-semibold text-xl z-10">
-                <div className="flex flex-wrap gap-10 justify-center w-full">
+            <div className="flex flex-col gap-5 min-h-screen justify-center items-center py-10 font-semibold text-md md:text-xl z-10">
+                <div className="flex flex-wrap gap-10 justify-center w-4/5 md:w-full">
                     <div className="flex flex-col gap-5">
                         <div className="flex flex-col text-left bg-[#3F0000]/[.38] p-5 rounded-2xl">
                             <p>Venue Partner</p>
                             <HomeSponsor
                                 imageUrl={ImageUrl.SM_SEASIDE}
                                 aspect="aspect-[400/92]"
-                                width="w-96"
+                                width="w-64 md:w-96"
                             />
                         </div>
                         <div className="flex flex-wrap gap-10 justify-stretch">
@@ -30,17 +30,17 @@ const SponsorSection = () => {
                                 <HomeSponsor
                                     imageUrl={ImageUrl.PROFOOD}
                                     aspect="aspect-[246/248]"
-                                    width="w-44"
+                                    width="w-24 md:w-44"
                                 />
                                 <HomeSponsor
                                     imageUrl={ImageUrl.PHOENIX}
                                     aspect="aspect-[250/251]"
-                                    width="w-44"
+                                    width="w-24 md:w-44"
                                 />
                                 <HomeSponsor
                                     imageUrl={ImageUrl.NIKKE}
                                     aspect="aspect-[250/141]"
-                                    width="w-44"
+                                    width="w-24 md:w-44"
                                 />
                             </div>
                             <div className="flex flex-col gap-3">
@@ -49,12 +49,12 @@ const SponsorSection = () => {
                                     <HomeSponsor
                                         imageUrl={ImageUrl.NONKI}
                                         aspect="aspect-[175/140]"
-                                        width="w-32"
+                                        width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
                                         imageUrl={ImageUrl.ANGKAS}
                                         aspect="aspect-[175/132]"
-                                        width="w-32"
+                                        width="w-20 md:w-32"
                                     />
                                 </div>
                                 <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
@@ -62,23 +62,23 @@ const SponsorSection = () => {
                                     <HomeSponsor
                                         imageUrl={ImageUrl.SUNSTAR}
                                         aspect="aspect-[175/41]"
-                                        width="w-32"
+                                        width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
                                         imageUrl={ImageUrl.KEEPSAKES}
                                         aspect="aspect-[175/45]"
-                                        width="w-32"
+                                        width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
                                         imageUrl={ImageUrl.RADIO_105}
                                         aspect="aspect-[175/175]"
-                                        width="w-32"
+                                        width="w-20 md:w-32"
                                     />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
+                    <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center w-[240px] md:w-auto">
                         <p>Minor Sponsors</p>
                         <HomeSponsor
                             imageUrl={ImageUrl.INKPLACE}
@@ -111,7 +111,7 @@ const SponsorSection = () => {
                             width="w-36"
                         />
                     </div>
-                    <div className="flex flex-col gap-5 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
+                    <div className="flex flex-col gap-5 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center w-[240px] md:w-auto">
                         <p>Major Sponsors</p>
                         <HomeSponsor
                             imageUrl={ImageUrl.SELECTA}

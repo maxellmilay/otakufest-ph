@@ -17,10 +17,10 @@ const HomeCarousel = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-around text-center bg-transparent h-screen w-full p-20">
-            <div className="absolute h-full w-full bg-gradient-to-b from-transparent to-[#700000] flex items-center justify-center"></div>
+        <div className="flex flex-col items-center justify-around text-center bg-transparent h-[100vmin] w-full p-10 md:p-20">
+            <div className="absolute h-[100vmin] w-full bg-gradient-to-b from-transparent to-[#700000] flex items-center justify-center"></div>
             <div className="flex-grow"></div>
-            <figure className="relative aspect-[4/3] w-[25rem]">
+            <figure className="relative aspect-square w-[50vmin]">
                 <Image
                     src={ImageUrl.LOGO2024}
                     alt="guest"
@@ -28,10 +28,12 @@ const HomeCarousel = () => {
                     className="object-cover"
                 />
             </figure>
-            <span className="text-3xl z-10">
+            <span className="md:text-[2.5vw] z-10">
                 Connecting the world, one hobby at a time
             </span>
-            <span className="z-10">August 10-11, 2024 • SM Seaside Cebu</span>
+            <span className="md:text-[1.5vw] z-10">
+                August 10-11, 2024 • SM Seaside Cebu
+            </span>
             <div className="absolute h-full w-full z-[-10]">
                 {images.map((imageUrl, index) => (
                     <Image
