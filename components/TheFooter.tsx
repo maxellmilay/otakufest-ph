@@ -1,4 +1,4 @@
-import ImageUrl from '@/enums/imageUrl';
+import enums from '@/enums/OFYears/ImageUrl2024';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,7 +11,7 @@ const TheFooter = () => {
         <footer className="flex flex-col md:flex-row gap-3 bg-white text-black justify-center items-center p-5 z-20">
             <figure className="relative aspect-[99/115] h-14">
                 <Image
-                    src={ImageUrl.LOGO}
+                    src={enums.ImageUrl.LOGO}
                     alt="logo"
                     fill
                     className="object-cover"
