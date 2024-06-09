@@ -1,10 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
-import ImageUrl from '@/enums/OFYears/ImageUrl2024';
-import ExternalLink from '@/enums/externalLinks';
-import HomeSponsor from '@/components/SponsorImage';
 import HomeCarousel from '@/components/HomeCarousel';
 import EventDescription from '@/components/EventDescription';
 import GuestSection from '@/components/GuestSection';
@@ -23,7 +19,6 @@ const Home = () => {
             <section>
                 <EventDescription />
             </section>
-
             <section id="guestSection">
                 <GuestSection />
             </section>
@@ -37,11 +32,9 @@ const Home = () => {
             <section id="eventSection">
                 <EventSection />
             </section>
-
             <section id="shirtSection">
                 <SalesSection />
             </section>
-
             <section>
                 <SponsorSection />
             </section>
