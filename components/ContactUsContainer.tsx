@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContactUsForms } from './ContactUsForms';
 import Image from 'next/image';
-import ImageUrl from '@/enums/imageUrl';
+import * as Images from '@/enums/OFYears/ImageUrl2024';
 
 export const ContactUsContainer = () => {
     return (
@@ -13,14 +13,14 @@ export const ContactUsContainer = () => {
             <ContactUsForms />
 
             <Image
-                src={ImageUrl.BANANA}
+                src={Images.default.ImageUrl.BANANA}
                 alt="guest"
                 width={220}
                 height={180}
                 className="absolute left-[-180px] bottom-[-10px]"
             />
             <Image
-                src={ImageUrl.FISH}
+                src={Images.default.ImageUrl.FISH}
                 alt="guest"
                 width={320}
                 height={300}
