@@ -23,9 +23,9 @@ const TheHeader = () => {
                 OTAKUFEST
             </Link>
             <nav className="hidden md:flex items-center gap-5 text-lg">
-                <Link href="#guestSection">Guests</Link>
-                <Link href="#shirtSection">Shirt</Link>
-                <Link href="#eventSection">Events</Link>
+                <Link href="/#guestSection">Guests</Link>
+                <Link href="/#shirtSection">Shirt</Link>
+                <Link href="/#eventSection">Events</Link>
                 <Link href={Routes.FAQS}>FAQs</Link>
                 <div className="bg-white px-5 py-2 rounded-lg">
                     <Link
