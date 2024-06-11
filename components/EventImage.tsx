@@ -9,8 +9,8 @@ interface IProps {
 const EventImage = (props: IProps) => {
     const { imageUrl, name } = props;
     return (
-        <div className="flex flex-col gap-2">
-            <figure className="relative aspect-[4/3] w-[20rem] md:w-[52.5vh] mx-[1.7rem] mt-16">
+        <div className="flex flex-col text-wrap break-words text-center text-md md:text-xl gap-2">
+            <figure className="relative aspect-square w-[15rem] md:w-[52.5vh] mx-[1.7rem] mt-16">
                 <Image
                     src={imageUrl}
                     alt="guest"
@@ -19,7 +19,7 @@ const EventImage = (props: IProps) => {
                     className="object-cover"
                 />
             </figure>
-            <p className="text-center text-md md:text-xl">{name}</p>
+            {name}
         </div>
     );
 };

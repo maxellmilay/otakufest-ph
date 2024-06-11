@@ -14,7 +14,7 @@ const config: Config = {
             },
             colors: {
                 site: {
-                    main: '#c60004',
+                    main: '#922424',
                     secondary: '#FFFFFF',
                 },
             },
