@@ -65,7 +65,7 @@ export const ContactUsForms = () => {
                     onChange={handleChange}
                     required
                 >
-                    <option value="" disabled selected hidden>
+                    <option value="" disabled hidden>
                         - Concern -
                     </option>
                     <option value="option1">Option 1</option>

@@ -46,6 +46,9 @@ enum ImageUrl {
     YOUTUBEICON = '/images/yt-icon.png',
     GAWRGURA = '/images/guests/gawrgura.png',
     OUROKRONII = '/images/guests/ourokronii.png',
+
+    BANANA = '/images/banana.png',
+    FISH = '/images/fish.png',
 }
 
 export default ImageUrl;
