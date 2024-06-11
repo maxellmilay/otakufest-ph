@@ -1,9 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import ImageUrl from '@/enums/imageUrl';
+import enums from '@/enums/OFYears/ImageUrl2024';
 
-const images = [ImageUrl.CAROUSEL1, ImageUrl.CAROUSEL2];
+const images = [enums.ImageUrl.CAROUSEL1, enums.ImageUrl.CAROUSEL2];
 
 const HomeCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -17,12 +17,11 @@ const HomeCarousel = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-around text-center bg-transparent h-[100vmin] w-full p-10 md:p-20">
-            <div className="absolute h-[100vmin] w-full bg-gradient-to-b from-transparent to-[#700000] flex items-center justify-center"></div>
-            <div className="flex-grow"></div>
+        <div className="flex flex-col items-center justify-center text-center bg-transparent h-[100vmin] w-full p-10 md:p-20">
+            <div className="absolute h-[100vmin] w-full bg-gradient-to-b from-transparent to-site-main flex items-center justify-center"></div>
             <figure className="relative aspect-square w-[50vmin]">
                 <Image
-                    src={ImageUrl.LOGO2024}
+                    src={enums.ImageUrl.LOGO2024}
                     alt="guest"
                     fill
                     className="object-cover"
@@ -32,7 +31,7 @@ const HomeCarousel = () => {
                 Connecting the world, one hobby at a time
             </span>
             <span className="md:text-[1.5vw] z-10">
-                August 10-11, 2024 • SM Seaside Cebu
+                August 17-18, 2024 • SM Seaside Cebu
             </span>
             <div className="absolute h-full w-full z-[-10]">
                 {images.map((imageUrl, index) => (
