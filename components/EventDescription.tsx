@@ -2,14 +2,13 @@ import React from 'react';
 
 const EventDescription = () => {
     return (
-        <div className="flex flex-col items-center justify-center text-center bg-[#C60001] w-full p-10 md:p-20">
+        <div className="flex flex-col items-center justify-center text-center bg-site-main w-full p-10 md:px-[20vw] md:p-20">
             <span className="text-4xl md:text-6xl font-bold">OTAKUFEST</span>
             <span className="text-md md:text-xl mt-6">
-                Knock, knock. Who’s there? Otakufest. Otakufest who? Otakufest
-                2024! Charot. Unsa bitaw description ari? Happy birthday, Maxell
-                Gahit Milay. Knock, knock. Who’s there? Otakufest. Otakufest
-                who? Otakufest 2024! Charot. Unsa bitaw description ari? Happy
-                birthday, Maxell Gahit Milay.
+                Otakufest is the premier and the most anticipated cosplay and
+                hobbies convention in the Visayas, held annually in Cebu City,
+                Philippines. Come join our event happening this{' '}
+                <b>AUGUST 17-18, 2024</b>!
             </span>
         </div>
     );

@@ -1,56 +1,52 @@
 import React from 'react';
 import EventImage from './EventImage';
-import ImageUrl from '@/enums/imageUrl';
+import enums from '@/enums/OFYears/ImageUrl2024';
 
 const EventSection = () => {
     return (
-        <div className="flex flex-col items-center justify-around text-justify bg-[#C60001] w-full p-10 md:p-20">
-            <div className="flex flex-col text-white">
+        <div className="flex flex-col items-center justify-around text-justify bg-site-main w-full p-10 md:p-20">
+            <div className="flex flex-col text-white w-full">
                 <span className="text-5xl md:text-8xl font-bold w-full">
                     EVENTS
                 </span>
-                <span className="text-md md:text-xl w-full">
-                    Knock, knock. Who’s there? Otakufest. Otakufest who?
-                    Otakufest 2024! Charot. Unsa bitaw description ari? Happy
-                    birthday, Maxell Gahit Milay. Knock, knock. Who’s there?
-                    Otakufest. Otakufest who? Otakufest 2024! Charot. Unsa bitaw
-                    description ari? Happy birthday, Maxell Gahit Milay.
+                <span className="text-md md:text-xl">
+                    Join us and let your boundless creativity soar in our
+                    various assortment of events. Expect nothing less than a
+                    brilliant showcase of skill and talent that is sure to cater
+                    to and satisfy your cravings for an unforgettable otaku
+                    experience.
+                    <br />
+                    <br />
+                    Click the images to see the details of each event and sign
+                    up now! Applications close in <b>3</b> days!
                 </span>
             </div>
+            <span className="text-4xl md:text-6xl mt-14 font-bold">
+                EVENTS AND COMPETITIONS
+            </span>
             <div className="flex flex-row flex-wrap w-full justify-center">
-                <EventImage
-                    imageUrl={ImageUrl.ASIAN_POP_DANCE}
-                    name="Asian Pop Dance"
-                />
-                <EventImage imageUrl={ImageUrl.CARD_GAMES} name="Card Games" />
-                <EventImage
-                    imageUrl={ImageUrl.CHIBI_COSPLAY}
-                    name="Chibi Cosplay"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.GUNPLA_BUILDING}
-                    name="Gunpla Building"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.JAPANESE_SINGING}
-                    name="Japanese Singing"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.ONE_SHOT_MANGA}
-                    name="One Shot Manga"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.ORIGINAL_CHARACTER_DESIGN}
-                    name="Original Character Design"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.PET_COSPLAY}
-                    name="Pet Cosplay"
-                />
-                <EventImage
-                    imageUrl={ImageUrl.SOLO_COSPLAY}
-                    name="Solo Cosplay"
-                />
+                {Object.values(enums.Events).map((currentEvent) => (
+                    <EventImage
+                        key={currentEvent.eventName}
+                        imageUrl={currentEvent.eventUrl}
+                        name={currentEvent.eventName}
+                    />
+                ))}
+            </div>
+            <span className="text-4xl md:text-6xl mt-20 font-bold">
+                PARTNERED COMPETITIONS
+            </span>
+            <span className="text-md md:text-xl">
+                Want to partner with us for a competition? Contact us!
+            </span>
+            <div className="flex flex-row flex-wrap w-full justify-center">
+                {Object.values(enums.PartneredEvents).map((currentEvent) => (
+                    <EventImage
+                        key={currentEvent.eventName}
+                        imageUrl={currentEvent.eventUrl}
+                        name={currentEvent.eventName}
+                    />
+                ))}
             </div>
         </div>
     );
