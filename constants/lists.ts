@@ -1,4 +1,4 @@
-import ImageUrl from '../enums/imageUrl';
+import ImageUrl from '../enums/OFYears/ImageUrl2024';
 
 export const cosplayGuests = [
     ImageUrl.ASHEN,
