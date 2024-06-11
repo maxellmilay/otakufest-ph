@@ -8,6 +8,7 @@ import SalesSection from '@/components/SalesSection';
 import VtuberSection from '@/components/VtuberSection';
 import EventSection from '@/components/EventSection';
 import SponsorSection from '@/components/SponsorSection';
+import BoothSection from '@/components/BoothSection';
 
 const Home = () => {
     return (
@@ -19,6 +20,11 @@ const Home = () => {
             <section>
                 <EventDescription />
             </section>
+
+            <section>
+                <BoothSection />
+            </section>
+
             <section id="guestSection">
                 <GuestSection />
             </section>
