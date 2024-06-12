@@ -17,14 +17,14 @@ export const ContactUsContainer = () => {
                 alt="guest"
                 width={220}
                 height={180}
-                className="absolute left-[-180px] bottom-[-10px] sm:left-[-100px] invisible sm:visible sm:w-36 lg:w-56"
+                className="absolute lg:left-[-180px] bottom-[-10px] sm:left-[-100px] invisible sm:visible sm:w-36 lg:w-56"
             />
             <Image
                 src={Images.default.ImageUrl.FISH}
                 alt="guest"
                 width={320}
                 height={300}
-                className="absolute left-[-240px] bottom-[-90px] sm:left-[-150px] sm:bottom-[-75px] invisible sm:visible sm:w-60 lg:w-80"
+                className="absolute lg:left-[-240px] lg:bottom-[-90px] sm:left-[-150px] sm:bottom-[-75px] invisible sm:visible sm:w-60 lg:w-80"
             />
         </div>
     );
