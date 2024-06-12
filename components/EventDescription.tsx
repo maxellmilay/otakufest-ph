@@ -8,7 +8,7 @@ import { FaSquareInstagram } from 'react-icons/fa6';
 const EventDescription = () => {
     return (
         <div className="flex flex-col justify-start text-center bg-site-main w-full h-[150vh] overflow-hidden relative">
-            <div className="absolute right-0 flex flex-col h-full w-1/2 z-[15] items-center text-center justify-center bg-gradient-to-l to-transparent from-site-main px-5 md:px-20">
+            <div className="absolute bottom-0 flex flex-col h-1/2 w-full md:h-full md:w-1/2 md:right-0 z-[15] items-center text-center justify-center md:bg-gradient-to-l bg-gradient-to-t to-transparent from-site-main px-5 md:px-20">
                 <div className="flex flex-row">
                     <figure className="aspect-square w-10 md:w-16 relative">
                         <Image
@@ -36,8 +36,8 @@ const EventDescription = () => {
                     <FaSquareInstagram size={'5vh'} />
                 </div>
             </div>
-            <div className="absolute flex flex-col h-[100vmin] w-full h-1/2  bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
-            <figure className="aspect-square w-full md:w-[200vh] ml-[-40vh] relative">
+            <div className="absolute flex flex-col w-full h-1/2 bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
+            <figure className="relative aspect-square w-[150vh] md:w-[200vh] ml-[-40vh]">
                 <Image
                     src={enums.ImageUrl.MAINVISUAL}
                     alt="of24visual"
