@@ -23,6 +23,9 @@ const config: Config = {
                 yaldevi: ['Yaldevi', 'sans-serif'],
                 'montserrat-alt': ['Montserrat Alternates', 'sans-serif'],
             },
+            screens: {
+                xs: '500px',
+            },
         },
     },
     plugins: [],
