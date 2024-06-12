@@ -22,6 +22,7 @@ const enums = {
         SUNSTAR: '/images/sponsors/sunstar.png',
         WORKPLACE_CAFE: '/images/sponsors/workplace-cafe.png',
 
+        MAINVISUAL: '/images/of24visual.png',
         LOGO2024: '/images/logo-2024.png',
         LOGO2024_WHITE: '/images/logo-2024-white.png',
         OF24_FLOURISH: '/images/of24_pan.png',

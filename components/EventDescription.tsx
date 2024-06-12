@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import enums from '@/enums/OFYears/ImageUrl2024';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaSquareXTwitter } from 'react-icons/fa6';
 import { FaSquareInstagram } from 'react-icons/fa6';
@@ -38,7 +39,7 @@ const EventDescription = () => {
             <div className="absolute flex flex-col h-[100vmin] w-full h-1/2  bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
             <figure className="aspect-square w-full md:w-[200vh] ml-[-40vh] relative">
                 <Image
-                    src="/images/of24visual.png"
+                    src={enums.ImageUrl.MAINVISUAL}
                     alt="of24visual"
                     fill
                     className="object-cover"
