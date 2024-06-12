@@ -1,10 +1,7 @@
-'use client';
-import { useState } from 'react';
 import enums from '@/enums/OFYears/ImageUrl2024';
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import Routes from '@/enums/routes';
+import ExternalLink from '@/enums/externalLinks';
 import {
     RiFacebookCircleFill,
     RiTwitterFill,
@@ -16,13 +13,7 @@ import {
     RiInstagramLine,
 } from 'react-icons/ri';
 
-import ExternalLink from '@/enums/externalLinks';
-
 const TheFooter = () => {
-    const [isFBHovered, setIsFBHovered] = useState(false);
-    const [isTwtHovered, setIsTwtHovered] = useState(false);
-    const [isIGHovered, setIsIGHovered] = useState(false);
-
     return (
         <footer className="flex flex-col md:flex-row md:h-[10vw] md:gap-32 bg-white text-black justify-center items-center p-5 z-20">
             <div className="flex flex-col md:flex-row items-center gap-2 text-2xl md:text-5xl">
@@ -42,56 +33,46 @@ const TheFooter = () => {
                         rel="noreferrer"
                         href={ExternalLink.FB}
                         target="_blank"
-                        onMouseEnter={() => setIsFBHovered(true)}
-                        onMouseLeave={() => setIsFBHovered(false)}
+                        className="group"
                     >
-                        {isFBHovered ? (
-                            <RiFacebookCircleLine
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        ) : (
-                            <RiFacebookCircleFill
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        )}
+                        <RiFacebookCircleFill
+                            color="black"
+                            className="h-12 w-12 group-hover:hidden"
+                        />
+                        <RiFacebookCircleLine
+                            color="black"
+                            className="h-12 w-12 hidden group-hover:block"
+                        />
                     </a>
                     <a
                         rel="noreferrer"
                         href={ExternalLink.TWITTER}
-                        onMouseEnter={() => setIsTwtHovered(true)}
-                        onMouseLeave={() => setIsTwtHovered(false)}
+                        target="_blank"
+                        className="group"
                     >
-                        {isTwtHovered ? (
-                            <RiTwitterLine
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        ) : (
-                            <RiTwitterFill
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        )}
+                        <RiTwitterFill
+                            color="black"
+                            className="h-12 w-12 group-hover:hidden"
+                        />
+                        <RiTwitterLine
+                            color="black"
+                            className="h-12 w-12 hidden group-hover:block"
+                        />
                     </a>
                     <a
                         rel="noreferrer"
                         href={ExternalLink.INSTAGRAM}
-                        onMouseEnter={() => setIsIGHovered(true)}
-                        onMouseLeave={() => setIsIGHovered(false)}
+                        target="_blank"
+                        className="group"
                     >
-                        {isIGHovered ? (
-                            <RiInstagramLine
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        ) : (
-                            <RiInstagramFill
-                                color="black"
-                                className="h-12 w-12"
-                            />
-                        )}
+                        <RiInstagramFill
+                            color="black"
+                            className="h-12 w-12 group-hover:hidden"
+                        />
+                        <RiInstagramLine
+                            color="black"
+                            className="h-12 w-12 hidden group-hover:block"
+                        />
                     </a>
                 </div>
                 <p className="text-gray-500 text-center text-xs">
