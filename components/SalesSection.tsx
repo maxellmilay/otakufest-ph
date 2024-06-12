@@ -72,7 +72,7 @@ const SalesSection = () => {
                     </div>
                 </div>
             </div>
-            <span className="text-site-main text-md md:text-xl mt-4">
+            <span className="text-site-main text-justify text-md md:text-xl mt-4">
                 For concerns regarding your purchases from Otakufest 2024,
                 consider{' '}
                 <Link href={Routes.HOME} className="underline">
