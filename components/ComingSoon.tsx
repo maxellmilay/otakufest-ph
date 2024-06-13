@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import enums from '@/enums/OFYears/ImageUrl2024';
 
 const VtuberSection = () => {
