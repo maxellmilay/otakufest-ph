@@ -35,6 +35,9 @@ const enums = {
 
         BANANA: '/images/banana.png',
         FISH: '/images/fish.png',
+        BBQ: '/images/bbq.png',
+        LEAF: '/images/leaf.png',
+        SHRIMP: '/images/shrimp.png',
     },
 
     Guests: {
