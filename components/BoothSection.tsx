@@ -4,11 +4,11 @@ import { IoHeartCircle } from 'react-icons/io5';
 const BoothSection = () => {
     return (
         <div className="flex flex-col items-center justify-around text-justify bg-white w-full p-10 md:p-20">
-            <div className="flex flex-col md:flex-row text-site-main w-full justify-left">
-                <span className="text-5xl 2xl:text-8xl font-bold w-1/3">
+            <div className="flex flex-col gap-3 sm:gap-5 text-site-main w-full items-center">
+                <span className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
                     BOOTHS
                 </span>
-                <ul className="w-full md:w-2/3 text-md md:text-xl list-none">
+                <ul className="w-full md:w-2/3 text-xs sm:text-sm md:text-md lg:text-xl list-none">
                     <li className="flex flex-row items-center mb-2">
                         <IoHeartCircle size={'5vh'} className="mr-2" />
                         <span className="w-full">
@@ -41,7 +41,7 @@ const BoothSection = () => {
                     </li>
                 </ul>
             </div>
-            <div className="flex flex-wrap w-full justify-center xl:justify-between">
+            <div className="flex flex-wrap w-full justify-around">
                 <div className="flex flex-col w-[85vh] h-[20vh] md:h-[35vh] text-white text-md md:text-xl px-10 bg-site-main mt-10 md:mt-20 rounded-lg items-center justify-center text-center hover:scale-[1.05] transform transition duration-y">
                     <span className="text-xl md:text-4xl font-bold">
                         APPLY FOR ARTIST ALLEY
