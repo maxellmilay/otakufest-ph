@@ -6,7 +6,7 @@ import HomeSponsor from '@/components/SponsorImage';
 const SponsorSection = () => {
     return (
         <div className="flex flex-col min-h-[85rem] text-center w-full relative bg-cover bg-center overflow-hidden py-10 md:py-20 bg-theme">
-            <span className="text-site-main text-5xl md:text-8xl font-bold w-full">
+            <span className="text-site-main text-4xl md:text-6xl font-bold w-full">
                 SPONSORS
             </span>
 
