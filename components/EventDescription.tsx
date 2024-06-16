@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import enums from '@/enums/OFYears/ImageUrl2024';
+import { OF24_LOGO_WHITE, OF24_MAIN_VISUAL } from '@/enums/imageUrls';
 import { FaFacebookSquare } from 'react-icons/fa';
-import { FaSquareXTwitter } from 'react-icons/fa6';
-import { FaSquareInstagram } from 'react-icons/fa6';
+import { FaSquareXTwitter, FaSquareInstagram } from 'react-icons/fa6';
 
 const EventDescription = () => {
     return (
@@ -12,7 +11,7 @@ const EventDescription = () => {
                 <div className="flex flex-row">
                     <figure className="aspect-square w-10 md:w-16 relative">
                         <Image
-                            src="/images/logo-2024-white.png"
+                            src={OF24_LOGO_WHITE}
                             alt="of24visual"
                             fill
                             className="object-cover"
@@ -27,8 +26,8 @@ const EventDescription = () => {
                     and hobbies convention in the Visayas, held annually in Cebu
                     City, Philippines. <br />
                     <br />
-                    Come join our event happening this <b>AUGUST 17-18, 2024</b>
-                    !
+                    Come join our event happening this{' '}
+                    <span className="font-bold"> AUGUST 17-18, 2024 </span> !
                 </span>
                 <div className="flex flex-row mt-16 gap-4">
                     <FaFacebookSquare size={'5vh'} />
@@ -36,10 +35,10 @@ const EventDescription = () => {
                     <FaSquareInstagram size={'5vh'} />
                 </div>
             </div>
-            <div className="absolute top-0 flex flex-col w-full h-1/2 bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
+            <div className="absolute top-0 flex-col w-full h-1/2 bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
             <figure className="relative aspect-square w-[150vh] md:w-[200vh] md:ml-[-85vh]">
                 <Image
-                    src={enums.ImageUrl.MAINVISUAL}
+                    src={OF24_MAIN_VISUAL}
                     alt="of24visual"
                     fill
                     className="object-cover"

@@ -41,11 +41,11 @@ const BoothSection = () => {
                     </li>
                 </ul>
             </div>
-            <div className="flex flex-row flex-wrap w-full justify-between">
+            <div className="flex flex-wrap w-full justify-center xl:justify-between">
                 <div className="flex flex-col w-[85vh] h-[20vh] md:h-[35vh] text-white text-md md:text-xl px-10 bg-site-main mt-10 md:mt-20 rounded-lg items-center justify-center text-center hover:scale-[1.05] transform transition duration-y">
                     <span className="text-xl md:text-4xl font-bold">
                         APPLY FOR ARTIST ALLEY
-                    </span>
+                    </span>{' '}
                     Deadline: June 10th
                 </div>
                 <div className="flex flex-col w-[85vh] h-[20vh] md:h-[35vh] text-white text-md md:text-xl px-10 bg-site-main mt-10 md:mt-20 rounded-lg items-center justify-center text-center hover:scale-[1.05] transform transition duration-y">
@@ -56,13 +56,13 @@ const BoothSection = () => {
                 <div className="flex flex-col w-[85vh] h-[20vh] md:h-[35vh] text-white text-md md:text-xl px-10 bg-site-main mt-10 md:mt-20 rounded-lg items-center justify-center text-center hover:scale-[1.05] transform transition duration-y">
                     <span className="text-xl md:text-4xl font-bold">
                         APPLY FOR EXHIBITORS EMPORIUM
-                    </span>
+                    </span>{' '}
                     Deadline: June 10th
                 </div>
                 <div className="flex flex-col w-[85vh] h-[20vh] md:h-[35vh] text-white text-md md:text-xl px-10 bg-site-main mt-10 md:mt-20 rounded-lg items-center justify-center text-center hover:scale-[1.05] transform transition duration-y">
                     <span className="text-xl md:text-4xl font-bold">
                         APPLY FOR COSPLAY CROSSWALK
-                    </span>
+                    </span>{' '}
                     Deadline: June 10th
                 </div>
             </div>

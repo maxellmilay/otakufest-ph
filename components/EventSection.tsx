@@ -1,6 +1,6 @@
 import React from 'react';
 import EventImage from './EventImage';
-import enums from '@/enums/OFYears/ImageUrl2024';
+import { EVENTS, PARTNERED_EVENTS } from '@/enums/imageUrls';
 
 const EventSection = () => {
     return (
@@ -25,7 +25,7 @@ const EventSection = () => {
                 EVENTS AND COMPETITIONS
             </span>
             <div className="flex flex-row flex-wrap w-full justify-center">
-                {Object.values(enums.Events).map((currentEvent) => (
+                {Object.values(EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
                         imageUrl={currentEvent.eventUrl}
@@ -40,7 +40,7 @@ const EventSection = () => {
                 Want to partner with us for a competition? Contact us!
             </span>
             <div className="flex flex-row flex-wrap w-full justify-center">
-                {Object.values(enums.PartneredEvents).map((currentEvent) => (
+                {Object.values(PARTNERED_EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
                         imageUrl={currentEvent.eventUrl}

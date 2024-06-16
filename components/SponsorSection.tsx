@@ -1,14 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
-import enums from '@/enums/OFYears/ImageUrl2024';
+import { SPONSOR, OF24_PAN } from '@/enums/imageUrls';
 import HomeSponsor from '@/components/SponsorImage';
 
 const SponsorSection = () => {
     return (
-        <div
-            className="flex flex-col min-h-[85rem] text-center w-full relative bg-cover bg-center overflow-hidden py-10 md:py-20"
-            style={{ backgroundImage: `url(${enums.ImageUrl.BACKGROUND2024})` }}
-        >
+        <div className="flex flex-col min-h-[85rem] text-center w-full relative bg-cover bg-center overflow-hidden py-10 md:py-20 bg-theme">
             <span className="text-site-main text-5xl md:text-8xl font-bold w-full">
                 SPONSORS
             </span>
@@ -18,17 +15,17 @@ const SponsorSection = () => {
                     <div className="flex flex-col gap-5 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center w-[240px] md:w-auto">
                         <p>Major Sponsors</p>
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.SELECTA}
+                            imageUrl={SPONSOR.SELECTA}
                             aspect="aspect-[300/151]"
                             width="w-56"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.MY_LANGUAGE_CAFE}
+                            imageUrl={SPONSOR.MY_LANGUAGE_CAFE}
                             aspect="aspect-[300/110]"
                             width="w-56"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.PNB}
+                            imageUrl={SPONSOR.PNB}
                             aspect="aspect-[300/201]"
                             width="w-56"
                         />
@@ -36,32 +33,32 @@ const SponsorSection = () => {
                     <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center w-[240px] md:w-auto">
                         <p>Minor Sponsors</p>
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.INKPLACE}
+                            imageUrl={SPONSOR.INKPLACE}
                             aspect="aspect-[200/51]"
                             width="w-36"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.HOBBIWORKZ}
+                            imageUrl={SPONSOR.HOBBIWORKZ}
                             aspect="aspect-[200/100]"
                             width="w-36"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.MACOLOGY}
+                            imageUrl={SPONSOR.MACOLOGY}
                             aspect="aspect-[200/200]"
                             width="w-36"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.NATURES_SPRING}
+                            imageUrl={SPONSOR.NATURES_SPRING}
                             aspect="aspect-[200/97]"
                             width="w-36"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.WORKPLACE_CAFE}
+                            imageUrl={SPONSOR.WORKPLACE_CAFE}
                             aspect="aspect-[200/119]"
                             width="w-36"
                         />
                         <HomeSponsor
-                            imageUrl={enums.ImageUrl.ANE_MI}
+                            imageUrl={SPONSOR.ANE_MI}
                             aspect="aspect-[200/200]"
                             width="w-36"
                         />
@@ -70,7 +67,7 @@ const SponsorSection = () => {
                         <div className="flex flex-col text-left bg-[#3F0000]/[.38] p-5 rounded-2xl">
                             <p>Venue Partner</p>
                             <HomeSponsor
-                                imageUrl={enums.ImageUrl.SM_SEASIDE}
+                                imageUrl={SPONSOR.SM_SEASIDE}
                                 aspect="aspect-[400/92]"
                                 width="w-64 md:w-96"
                             />
@@ -79,17 +76,17 @@ const SponsorSection = () => {
                             <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
                                 <span className="text-left">Presenters</span>
                                 <HomeSponsor
-                                    imageUrl={enums.ImageUrl.PROFOOD}
+                                    imageUrl={SPONSOR.PROFOOD}
                                     aspect="aspect-[246/248]"
                                     width="w-24 md:w-44"
                                 />
                                 <HomeSponsor
-                                    imageUrl={enums.ImageUrl.PHOENIX}
+                                    imageUrl={SPONSOR.PHOENIX}
                                     aspect="aspect-[250/251]"
                                     width="w-24 md:w-44"
                                 />
                                 <HomeSponsor
-                                    imageUrl={enums.ImageUrl.NIKKE}
+                                    imageUrl={SPONSOR.NIKKE}
                                     aspect="aspect-[250/141]"
                                     width="w-24 md:w-44"
                                 />
@@ -98,12 +95,12 @@ const SponsorSection = () => {
                                 <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
                                     <p>Co-Presenters</p>
                                     <HomeSponsor
-                                        imageUrl={enums.ImageUrl.NONKI}
+                                        imageUrl={SPONSOR.NONKI}
                                         aspect="aspect-[175/140]"
                                         width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
-                                        imageUrl={enums.ImageUrl.ANGKAS}
+                                        imageUrl={SPONSOR.ANGKAS}
                                         aspect="aspect-[175/132]"
                                         width="w-20 md:w-32"
                                     />
@@ -111,17 +108,17 @@ const SponsorSection = () => {
                                 <div className="flex flex-col gap-3 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center">
                                     <p>Media Partners</p>
                                     <HomeSponsor
-                                        imageUrl={enums.ImageUrl.SUNSTAR}
+                                        imageUrl={SPONSOR.SUNSTAR}
                                         aspect="aspect-[175/41]"
                                         width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
-                                        imageUrl={enums.ImageUrl.KEEPSAKES}
+                                        imageUrl={SPONSOR.KEEPSAKES}
                                         aspect="aspect-[175/45]"
                                         width="w-20 md:w-32"
                                     />
                                     <HomeSponsor
-                                        imageUrl={enums.ImageUrl.RADIO_105}
+                                        imageUrl={SPONSOR.RADIO_105}
                                         aspect="aspect-[175/175]"
                                         width="w-20 md:w-32"
                                     />
@@ -134,7 +131,7 @@ const SponsorSection = () => {
 
             <figure className="absolute inset-x-0 bottom-[-52rem] aspect-square w-full">
                 <Image
-                    src={enums.ImageUrl.OF24_FLOURISH}
+                    src={OF24_PAN}
                     alt="logo"
                     fill
                     className="object-cover"

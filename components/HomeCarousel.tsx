@@ -1,9 +1,8 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import enums from '@/enums/OFYears/ImageUrl2024';
+import { OF24_LOGO, OF24_CAROUSEL_1, OF24_CAROUSEL_2 } from '@/enums/imageUrls';
 
-const images = [enums.ImageUrl.CAROUSEL1, enums.ImageUrl.CAROUSEL2];
+const images = [OF24_CAROUSEL_1, OF24_CAROUSEL_2];
 
 const HomeCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -19,9 +18,9 @@ const HomeCarousel = () => {
     return (
         <div className="flex flex-col items-center justify-center text-center bg-transparent h-[100vmin] w-full p-10 md:p-20">
             <div className="absolute h-[100vmin] w-full bg-gradient-to-b from-transparent to-site-main flex items-center justify-center"></div>
-            <figure className="relative aspect-square w-[50vmin]">
+            <figure className="relative aspect-square w-[50vmin] hover:scale-125 duration-200">
                 <Image
-                    src={enums.ImageUrl.LOGO2024}
+                    src={OF24_LOGO}
                     alt="guest"
                     fill
                     className="object-cover"
@@ -36,7 +35,7 @@ const HomeCarousel = () => {
             <div className="absolute h-full w-full z-[-10]">
                 {images.map((imageUrl, index) => (
                     <Image
-                        key={index}
+                        key={index + imageUrl}
                         src={imageUrl}
                         alt="guest"
                         fill

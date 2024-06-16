@@ -1,8 +1,8 @@
 import React from 'react';
-import ComingSoon from './ComingSoon';
 import Image from 'next/image';
 import Link from 'next/link';
 import Routes from '@/enums/routes';
+import { OF24_TICKETS } from '@/enums/imageUrls';
 
 const SalesSection = () => {
     return (
@@ -15,7 +15,7 @@ const SalesSection = () => {
             <div className="flex flex-col md:flex-row w-full bg-site-main rounded-xl overflow-hidden hover:scale-[1.01] transform transition duration-y">
                 <figure className="relative w-auto h-64 md:w-1/2 md:h-auto">
                     <Image
-                        src="/images/tickets.jpg"
+                        src={OF24_TICKETS}
                         alt="of24visual"
                         fill
                         className="object-cover"
@@ -45,7 +45,7 @@ const SalesSection = () => {
             <div className="flex flex-col md:flex-row w-full bg-site-main rounded-xl overflow-hidden hover:scale-[1.01] transform transition duration-y">
                 <figure className="relative w-auto h-64 md:w-1/2 md:h-auto">
                     <Image
-                        src="/images/tickets.jpg"
+                        src={OF24_TICKETS}
                         alt="of24visual"
                         fill
                         className="object-cover"

@@ -1,13 +1,11 @@
-import enums from '@/enums/OFYears/ImageUrl2024';
 import React from 'react';
 import Image from 'next/image';
+import { LOGO } from '@/enums/imageUrls';
 import ExternalLink from '@/enums/externalUrls';
 import {
     RiFacebookCircleFill,
     RiTwitterFill,
     RiInstagramFill,
-} from 'react-icons/ri';
-import {
     RiFacebookCircleLine,
     RiTwitterLine,
     RiInstagramLine,
@@ -19,7 +17,7 @@ const TheFooter = () => {
             <div className="flex flex-col md:flex-row items-center gap-2 text-2xl md:text-5xl">
                 <figure className="relative aspect-[99/115] h-[7.5vh]">
                     <Image
-                        src={enums.ImageUrl.LOGO}
+                        src={LOGO}
                         alt="logo"
                         fill
                         className="object-cover"
