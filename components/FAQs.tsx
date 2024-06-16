@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { AiFillQuestionCircle } from 'react-icons/ai';
-import * as Images from '@/enums/OFYears/ImageUrl2024';
+import { OF24_BBQ, OF24_FISH, OF24_LEAF, OF24_SHRIMP } from '@/enums/imageUrls';
 import Image from 'next/image';
 
 export const Faq = () => {
@@ -53,7 +53,7 @@ export const Faq = () => {
         <section className="bg-white flex flex-col items-center mt-12 text-site-main z-10 space-y-5  relative mb-4 overflow-hidden">
             {sections.map((section, sectionIndex) => (
                 <div
-                    key={sectionIndex}
+                    key={sectionIndex + section.title}
                     className="md:w-[45rem] w-[90%] z-10 md:px-4"
                 >
                     <h1 className="md:text-2xl lg:text-3xl text-xl font-lato font-black">
@@ -63,7 +63,7 @@ export const Faq = () => {
                         {section.items.map((item, itemIndex) => (
                             <div
                                 className="text-base md:text-lg lg:text-xl font-yaldevi flex flex-col pr-5 border-b-2 z-10 "
-                                key={itemIndex}
+                                key={itemIndex + item.question}
                             >
                                 <div
                                     className={`flex flex-row justify-between items-center cursor-pointer p-4 ${expandedItems[sectionIndex][itemIndex] ? 'border-[1px] border-b-2 border-site-main' : ''}`}
@@ -95,13 +95,13 @@ export const Faq = () => {
                                         <p>Homecooked food! 🍳</p>
                                     )}
                                     {sectionIndex === 0 && itemIndex === 2 && (
-                                        <p>Nope! It'd be cool, though</p>
+                                        <p>Nope! It&apos;d be cool, though</p>
                                     )}
                                     {sectionIndex === 1 && itemIndex === 0 && (
                                         <p>
-                                            We know you're excited (us too!),
-                                            but pre-orders for ticket sales will
-                                            release soon! 👀
+                                            We know you&apos;re excited (us
+                                            too!), but pre-orders for ticket
+                                            sales will release soon! 👀
                                         </p>
                                     )}
                                     {sectionIndex === 2 && itemIndex === 0 && (
@@ -148,9 +148,9 @@ export const Faq = () => {
                                                 As long as it abides by our
                                                 rules! Explicit (NSFW, sexual,
                                                 or R18) cosplays and dangerous
-                                                props are not allowed. If you'd
-                                                like to bring props, please be
-                                                aware of the following
+                                                props are not allowed. If
+                                                you&apos;d like to bring props,
+                                                please be aware of the following
                                                 guidelines and restrictions:
                                             </p>
                                             <ul className="text-base list-disc ml-10">
@@ -210,7 +210,7 @@ export const Faq = () => {
                                     {sectionIndex === 4 && itemIndex === 3 && (
                                         <>
                                             <p>
-                                                All Otakufest PH's OFFICIAL
+                                                All Otakufest PH&apos;s OFFICIAL
                                                 announcements are on our social
                                                 media pages below. If you see
                                                 someone using our name or
@@ -233,7 +233,7 @@ export const Faq = () => {
             ))}
             <figure className="absolute right-[-190px]   bottom-[-150px] rotate-12  overflow-hidden">
                 <Image
-                    src={Images.default.ImageUrl.FISH}
+                    src={OF24_FISH}
                     alt="logo"
                     width={400}
                     height={300}
@@ -242,7 +242,7 @@ export const Faq = () => {
             </figure>
             <figure className="absolute right-[-15px]   top-72 rotate-12 overflow-hidden ">
                 <Image
-                    src={Images.default.ImageUrl.BBQ}
+                    src={OF24_BBQ}
                     alt="logo"
                     width={150}
                     height={100}
@@ -251,7 +251,7 @@ export const Faq = () => {
             </figure>
             <figure className="absolute left-[-15px] top-30 rotate-12 overflow-hidden ">
                 <Image
-                    src={Images.default.ImageUrl.LEAF}
+                    src={OF24_LEAF}
                     alt="logo"
                     width={250}
                     height={100}
@@ -260,7 +260,7 @@ export const Faq = () => {
             </figure>
             <figure className="absolute left-[-15px]   bottom-36 rotate-12  overflow-hidden">
                 <Image
-                    src={Images.default.ImageUrl.SHRIMP}
+                    src={OF24_SHRIMP}
                     alt="logo"
                     width={150}
                     height={100}

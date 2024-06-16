@@ -1,7 +1,7 @@
 import enums from '@/enums/OFYears/ImageUrl2024';
 import React from 'react';
 import Image from 'next/image';
-import ExternalLink from '@/enums/externalLinks';
+import ExternalLink from '@/enums/externalUrls';
 import {
     RiFacebookCircleFill,
     RiTwitterFill,
