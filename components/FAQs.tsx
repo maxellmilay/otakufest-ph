@@ -65,7 +65,7 @@ export const Faq = () => {
                                 className="text-base md:text-lg lg:text-xl font-yaldevi flex flex-col pr-5 border-b-2 z-10 "
                                 key={itemIndex + item.question}
                             >
-                                <div
+                                <button
                                     className={`flex flex-row justify-between items-center cursor-pointer p-4 ${expandedItems[sectionIndex][itemIndex] ? 'border-[1px] border-b-2 border-site-main' : ''}`}
                                     onClick={() =>
                                         toggleItem(sectionIndex, itemIndex)
@@ -75,20 +75,20 @@ export const Faq = () => {
                                     <AiFillQuestionCircle
                                         className={`cursor-pointer z-10 ${expandedItems[sectionIndex][itemIndex] ? 'rotate-180 duration-500' : 'rotate-0 duration-500'}`}
                                     />
-                                </div>
+                                </button>
                                 <div
                                     className={`text-sm md:text-base lg:text-lg ml-8 w-[92%] text-justify  ${expandedItems[sectionIndex][itemIndex] ? 'p-4 max-h-96 overflow-y-auto transition-max-height duration-300 ease-out' : 'max-h-0 overflow-hidden transition-max-height duration-300 ease-out'}`}
                                 >
                                     {sectionIndex === 0 && itemIndex === 0 && (
                                         <p>
                                             Otakufest 2024 will be held on{' '}
-                                            <strong>
+                                            <span className="font-bold">
                                                 AUGUST 17-18, 2024 at Sky Hall
                                                 and Sky Park, SM Seaside City
                                                 Cebu, Philippines
-                                            </strong>
-                                            . Event doors open at 10AM on both
-                                            days!
+                                            </span>
+                                            {'. '}Event doors open at 10AM on
+                                            both days!
                                         </p>
                                     )}
                                     {sectionIndex === 0 && itemIndex === 1 && (
