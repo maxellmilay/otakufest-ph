@@ -10,6 +10,8 @@ export const OF24_BBQ =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718508468/bbq_vdtbmb.png';
 export const OF24_FISH =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718508519/fish_ypoxw6.png';
+export const OF24_BANANA =
+    'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718517955/banana_y5cvgo.png';
 export const OF24_CAROUSEL_1 =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718514049/hero-bg_rlznav.png';
 export const OF24_CAROUSEL_2 =
