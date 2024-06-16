@@ -5,7 +5,7 @@ const GuestSection = () => {
     return (
         <div className="flex flex-col items-center justify-around text-justify bg-white w-full p-10 md:p-20">
             <div className="flex flex-col text-site-main">
-                <span className="text-5xl md:text-8xl font-bold w-full">
+                <span className="text-4xl md:text-6xl font-bold w-full">
                     GUESTS
                 </span>
             </div>
