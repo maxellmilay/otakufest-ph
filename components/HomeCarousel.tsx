@@ -16,8 +16,8 @@ const HomeCarousel = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center text-center bg-transparent h-[100vmin] w-full p-10 md:p-20">
-            <div className="absolute h-[100vmin] w-full bg-gradient-to-b from-transparent to-site-main flex items-center justify-center"></div>
+        <div className="flex flex-col items-center justify-center text-center bg-transparent h-[100dvh] w-full p-10 md:p-20">
+            <div className="absolute h-[100dvh] w-full bg-gradient-to-b from-transparent to-site-main flex items-center justify-center"></div>
             <figure className="relative aspect-square w-[50vmin] hover:scale-125 duration-200">
                 <Image
                     src={OF24_LOGO}
