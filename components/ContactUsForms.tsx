@@ -1,6 +1,5 @@
 'use client';
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 import { RiMailSendLine } from 'react-icons/ri';
 
 interface FormValues {
