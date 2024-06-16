@@ -5,7 +5,6 @@ import HomeCarousel from '@/components/HomeCarousel';
 import EventDescription from '@/components/EventDescription';
 import GuestSection from '@/components/GuestSection';
 import SalesSection from '@/components/SalesSection';
-import VtuberSection from '@/components/VtuberSection';
 import EventSection from '@/components/EventSection';
 import SponsorSection from '@/components/SponsorSection';
 import BoothSection from '@/components/BoothSection';
