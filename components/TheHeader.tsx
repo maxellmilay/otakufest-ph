@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import enums from '@/enums/OFYears/ImageUrl2024';
 import Routes from '@/enums/routes';
 import { FaBars } from 'react-icons/fa';
+import { OF24_LOGO_WHITE } from '@/enums/imageUrls';
 
 const TheHeader = () => {
     return (
@@ -14,7 +14,7 @@ const TheHeader = () => {
             >
                 <figure className="relative aspect-square w-8 md:w-14 hover:-translate-y-1 duration-200">
                     <Image
-                        src={enums.ImageUrl.LOGO2024_WHITE}
+                        src={OF24_LOGO_WHITE}
                         alt="guest"
                         fill
                         className="object-cover"
