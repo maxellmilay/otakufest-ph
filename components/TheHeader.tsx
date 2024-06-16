@@ -7,7 +7,7 @@ import { OF24_LOGO_WHITE } from '@/enums/imageUrls';
 
 const TheHeader = () => {
     return (
-        <header className="bg-site-main fixed z-20 flex items-center py-4 w-screen px-10 justify-between">
+        <header className="bg-site-main/75 fixed z-20 flex items-center py-4 w-screen px-10 justify-between">
             <Link
                 href={Routes.HOME}
                 className="flex items-center text-2xl font-bold md:text-4xl"
