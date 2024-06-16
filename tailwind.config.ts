@@ -9,8 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             backgroundImage: {
-                hero: "url('/images/background/hero-bg.png')",
-                theme: "url('/images/theme-2024.png')",
+                theme: 'url("https://res.cloudinary.com/dhyoibvtc/image/upload/v1718507762/2024-custombg_lxqwxq.png")',
             },
             colors: {
                 site: {
