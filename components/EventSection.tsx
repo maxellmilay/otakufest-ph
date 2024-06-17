@@ -21,10 +21,10 @@ const EventSection = () => {
                     up now! Applications close in <b>3</b> days!
                 </p>
             </div>
-            <p className="text-2xl md:text-3xl font-bold">
+            <p className="text-2xl md:text-3xl font-bold mt-5">
                 EVENTS AND COMPETITIONS
             </p>
-            <div className="flex flex-row flex-wrap w-full justify-center">
+            <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
                 {Object.values(EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
@@ -33,13 +33,13 @@ const EventSection = () => {
                     />
                 ))}
             </div>
-            <p className="text-4xl md:text-6xl font-bold my-5">
+            <p className="text-2xl md:text-3xl font-bold mt-10 sm:mt-20">
                 PARTNERED COMPETITIONS
             </p>
             <p className="text-md md:text-xl">
                 Want to partner with us for a competition? Contact us!
             </p>
-            <div className="flex flex-row flex-wrap w-full justify-center">
+            <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
                 {Object.values(PARTNERED_EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
