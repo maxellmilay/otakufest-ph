@@ -41,7 +41,7 @@ const BoothSection = () => {
                     </li>
                 </ul>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:gap-4 md:gap-10">
+            <div className="grid grid-cols-2 gap-4 md:gap-10">
                 <div className="flex flex-col text-md md:text-xl py-8 md:py-12 lg:py-14 xl:py-16 2xl:py-24 px-3 sm:px-7 gap-4 bg-site-main rounded-lg items-center justify-center text-center">
                     <p className="text-sm md:text-lg xl:text-3xl 2xl:text-4xl font-bold">
                         APPLY FOR ARTIST ALLEY
