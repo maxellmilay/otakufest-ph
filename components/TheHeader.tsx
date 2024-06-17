@@ -31,7 +31,9 @@ const TheHeader = () => {
                     </p>
                 </Link>
                 <nav className="hidden md:flex items-center gap-5 text-lg">
-                    <TheNavBar />
+                    <TheNavBar
+                        setIsNavbarDropdownOpen={setIsNavbarDropdownOpen}
+                    />
                 </nav>
                 <button
                     className="flex md:hidden"
