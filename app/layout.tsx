@@ -2,10 +2,17 @@ import TheHeader from '@/components/TheHeader';
 import './globals.css';
 import type { Metadata } from 'next';
 import TheFooter from '@/components/TheFooter';
+import { Viewport } from 'next/dist/lib/metadata/types/extra-types';
 
 export const metadata: Metadata = {
     title: 'Otakufest PH',
     description: 'Official website for Otakufest PH',
+};
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    viewportFit: 'cover',
 };
 
 export default function RootLayout({
