@@ -36,7 +36,7 @@ const EventSection = () => {
             <p className="text-2xl md:text-3xl font-bold mt-10 sm:mt-20">
                 PARTNERED COMPETITIONS
             </p>
-            <p className="text-md md:text-xl">
+            <p className="text-xs sm:text-sm md:text-xl mb-5">
                 Want to partner with us for a competition? Contact us!
             </p>
             <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
