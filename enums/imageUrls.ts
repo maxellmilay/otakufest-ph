@@ -128,3 +128,69 @@ export enum SPONSOR {
     KEEPSAKES = 'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718517248/keepsakes_v042r5.png',
     RADIO_105 = 'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718517220/radio-105_tjfvnt.png',
 }
+
+export const ETICKETS = {
+    DAY1: {
+        imageUrl: '/tix/1.png',
+        itemName: 'OTAKUFEST 2024 DAY 1 ONLY PASS',
+        price: 220.0,
+        itemDesc: 'For AUGUST 17 ONLY',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Digital',
+    },
+    DAY2: {
+        imageUrl: '/tix/3.png',
+        itemName: 'OTAKUFEST 2024 DAY 2 ONLY PASS',
+        price: 220.0,
+        itemDesc: 'For AUGUST 18 ONLY',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Digital',
+    },
+    BOTH_DAYS: {
+        imageUrl: '/tix/5.png',
+        itemName: 'OTAKUFEST 2024 TWO DAY BUNDLE',
+        price: 420.0,
+        itemDesc: 'SAVE P20',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Digital',
+    },
+};
+
+export const PHYS_TICKETS = {
+    DAY1: {
+        imageUrl: '/tix/2.png',
+        itemName: 'OTAKUFEST 2024 DAY 1 ONLY PHYSICAL PASS',
+        price: 230.0,
+        itemDesc: 'For AUGUST 17 ONLY',
+        status: 'Meetup date has already passed. Keep posted for more updates!',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    DAY2: {
+        imageUrl: '/tix/4.png',
+        itemName: 'OTAKUFEST 2024 DAY 2 ONLY PHYSICAL PASS',
+        price: 230.0,
+        itemDesc: 'For AUGUST 18 ONLY',
+        status: 'Meetup date has already passed. Keep posted for more updates!',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    BOTH_DAYS: {
+        imageUrl: '/tix/6.png',
+        itemName: 'OTAKUFEST 2024 TWO DAY PHYSICAL BUNDLE',
+        price: 450.0,
+        itemDesc: 'Save P10 for both days',
+        status: 'Meetup date has already passed. Keep posted for more updates!',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+};
