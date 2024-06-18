@@ -1,7 +1,7 @@
 import React from 'react';
 import { OF24_PAN } from '@/enums/imageUrls';
 import Image from 'next/image';
-import { Faq } from '@/components/FAQs';
+import { Faq } from '@/components/faqs/FAQs';
 
 const Faqs = () => {
     return (
