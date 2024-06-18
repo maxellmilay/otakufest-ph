@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import HomeCarousel from '@/components/HomeCarousel';
-import EventDescription from '@/components/EventDescription';
-import GuestSection from '@/components/GuestSection';
-import SalesSection from '@/components/SalesSection';
-import EventSection from '@/components/EventSection';
-import SponsorSection from '@/components/SponsorSection';
-import BoothSection from '@/components/BoothSection';
+import HomeCarousel from '@/components/home/HomeCarousel';
+import EventDescription from '@/components/home/EventDescription';
+import GuestSection from '@/components/home/GuestSection';
+import SalesSection from '@/components/home/SalesSection';
+import EventSection from '@/components/home/EventSection';
+import SponsorSection from '@/components/home/SponsorSection';
+import BoothSection from '@/components/home/BoothSection';
 
 const Home = () => {
     return (

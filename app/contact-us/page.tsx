@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactUsContainer } from '@/components/ContactUsContainer';
+import { ContactUsContainer } from '@/components/contact-us/ContactUsContainer';
 
 const ContactUs = () => {
     return (
