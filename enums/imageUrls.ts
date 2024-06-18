@@ -194,3 +194,56 @@ export const PHYS_TICKETS = {
         tag: 'Physical',
     },
 };
+
+export const MERCH = {
+    SHIRT: {
+        imageUrl: '/shirt both.png',
+        itemName: 'T-SHIRT',
+        price: 300.0,
+        itemDesc: 'Limited edition, (20-2XL)',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    TOTE_BAG: {
+        imageUrl: '/TOTE BAG.png',
+        itemName: 'TOTE BAG',
+        price: 180.0,
+        itemDesc: 'Limited edition',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    ACRYLIC_PIN: {
+        imageUrl: '/ACRYLIC PIN.png',
+        itemName: 'ACRYLIC PIN',
+        price: 80.0,
+        itemDesc: 'Limited edition',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    FOLDABLE_FAN: {
+        imageUrl: '/ROUND FAN.png',
+        itemName: 'FOLDABLE FAN',
+        price: 30.0,
+        itemDesc: 'Limited edition',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+    MERCH_BUNDLE: {
+        imageUrl: '/merch bundle.png',
+        itemName: 'ALL-IN MERCH BUNDLE',
+        price: 500.0,
+        itemDesc: 'Save P90!',
+        status: 'Available',
+        purchaseURL:
+            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        tag: 'Physical',
+    },
+};

@@ -18,7 +18,7 @@ const SaleItem = (props: IProps) => {
     const { imageUrl, itemName, price, itemDesc, status, purchaseURL, tag } =
         props;
     return (
-        <div className="group relative w-full lg:w-1/3 flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main ease-in duration-100 overflow-hidden">
+        <div className="group relative w-full flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main ease-in duration-100 overflow-hidden">
             {status === 'Available' ? (
                 <div className="absolute flex w-full h-full z-10 inset-0 bg-gray-500/[0.2] items-center justify-center hidden group-hover:flex">
                     <a href={purchaseURL}>
