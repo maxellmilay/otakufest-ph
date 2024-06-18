@@ -131,7 +131,8 @@ export enum SPONSOR {
 
 export const ETICKETS = {
     DAY1: {
-        imageUrl: '/tix/1.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/e-ticket-1_hjptbw.png',
         itemName: 'OTAKUFEST 2024 DAY 1 ONLY PASS',
         price: 220.0,
         itemDesc: 'For AUGUST 17 ONLY',
@@ -141,7 +142,8 @@ export const ETICKETS = {
         tag: 'Digital',
     },
     DAY2: {
-        imageUrl: '/tix/3.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/e-ticket-2_orpvbj.png',
         itemName: 'OTAKUFEST 2024 DAY 2 ONLY PASS',
         price: 220.0,
         itemDesc: 'For AUGUST 18 ONLY',
@@ -151,7 +153,8 @@ export const ETICKETS = {
         tag: 'Digital',
     },
     BOTH_DAYS: {
-        imageUrl: '/tix/5.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/e-ticket-both_rvgjy0.png',
         itemName: 'OTAKUFEST 2024 TWO DAY BUNDLE',
         price: 420.0,
         itemDesc: 'SAVE P20',
@@ -164,7 +167,8 @@ export const ETICKETS = {
 
 export const PHYS_TICKETS = {
     DAY1: {
-        imageUrl: '/tix/2.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719155/physical-1_xkpzxy.png',
         itemName: 'OTAKUFEST 2024 DAY 1 ONLY PHYSICAL PASS',
         price: 230.0,
         itemDesc: 'For AUGUST 17 ONLY',
@@ -174,7 +178,8 @@ export const PHYS_TICKETS = {
         tag: 'Physical',
     },
     DAY2: {
-        imageUrl: '/tix/4.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/physical-2_fgt7fi.png',
         itemName: 'OTAKUFEST 2024 DAY 2 ONLY PHYSICAL PASS',
         price: 230.0,
         itemDesc: 'For AUGUST 18 ONLY',
@@ -184,7 +189,8 @@ export const PHYS_TICKETS = {
         tag: 'Physical',
     },
     BOTH_DAYS: {
-        imageUrl: '/tix/6.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/physical-both_ap9ptk.png',
         itemName: 'OTAKUFEST 2024 TWO DAY PHYSICAL BUNDLE',
         price: 450.0,
         itemDesc: 'Save P10 for both days',
