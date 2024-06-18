@@ -1,7 +1,7 @@
-import TheHeader from '@/components/TheHeader';
+import TheHeader from '@/components/generics/TheHeader';
 import './globals.css';
 import type { Metadata } from 'next';
-import TheFooter from '@/components/TheFooter';
+import TheFooter from '@/components/generics/TheFooter';
 import { Viewport } from 'next/dist/lib/metadata/types/extra-types';
 
 export const metadata: Metadata = {
