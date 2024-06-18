@@ -10,6 +10,7 @@ const config: Config = {
         extend: {
             backgroundImage: {
                 theme: 'url("https://res.cloudinary.com/dhyoibvtc/image/upload/v1718507762/2024-custombg_lxqwxq.png")',
+                heroBg: 'url("https://res.cloudinary.com/dhyoibvtc/image/upload/v1718514049/hero-bg_rlznav.png")',
             },
             colors: {
                 site: {
@@ -24,6 +25,15 @@ const config: Config = {
             },
             screens: {
                 xs: '500px',
+            },
+            keyframes: {
+                slide: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0)' },
+                },
+            },
+            animation: {
+                slide: 'slide 1s forwards',
             },
         },
     },

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import HomeCarousel from '@/components/HomeCarousel';
+import { HomePage } from '@/components/HomePage';
 import EventDescription from '@/components/EventDescription';
 import GuestSection from '@/components/GuestSection';
 import SalesSection from '@/components/SalesSection';
@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <>
             <section>
-                <HomeCarousel />
+                <HomePage />
             </section>
 
             <section>
