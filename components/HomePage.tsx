@@ -10,7 +10,12 @@ import {
 } from '@/enums/imageUrls';
 import CarouselBackground from './CarouselBackground';
 
-const images = ['', OF24_CAROUSEL_2, OF24_BACKGROUND, OF24_CAROUSEL_1];
+const images = [
+    '/smseaside.jpg',
+    OF24_CAROUSEL_2,
+    OF24_BACKGROUND,
+    OF24_CAROUSEL_1,
+];
 
 export const HomePage = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -52,7 +57,7 @@ export const HomePage = () => {
             link: '',
         },
     ];
-    
+
     return (
         <section className="h-screen  flex flex-col font-yaldevi relative ">
             <CarouselBackground
@@ -60,7 +65,7 @@ export const HomePage = () => {
                 news={news}
                 images={images}
             />
-            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly  h-[18%] w-full p-4 space-x-2 ">
+            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly  h-[20%] sm:h-[18%] w-full p-4 space-x-4 md:space-x-2 overflow-x-auto overflow-y-hidden ">
                 {news.map((card, index) => (
                     <CarouselCard
                         key={index}
