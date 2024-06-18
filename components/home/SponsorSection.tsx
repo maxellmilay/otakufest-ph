@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { SPONSOR, OF24_PAN } from '@/enums/imageUrls';
-import HomeSponsor from '@/components/SponsorImage';
+import HomeSponsor from '@/components/home/SponsorImage';
 
 const SponsorSection = () => {
     return (

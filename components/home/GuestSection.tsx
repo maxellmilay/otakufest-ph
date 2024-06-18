@@ -1,5 +1,5 @@
 import React from 'react';
-import ComingSoon from './ComingSoon';
+import ComingSoon from '../generics/ComingSoon';
 
 const GuestSection = () => {
     return (
