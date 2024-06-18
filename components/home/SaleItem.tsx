@@ -62,11 +62,7 @@ const SaleItem = (props: IProps) => {
                         </div>
                         <p className="font-bold">₱{price}</p>
                     </li>
-                    <li className="flex flex-row justify-around items-center mb-2">
-                        <FaCircleInfo
-                            size={'3.5vh'}
-                            className="mr-2 w-6 text-site-main"
-                        />
+                    <li className="w-full bg-site-main/[0.15] justify-around items-center rounded-lg mb-2 p-2">
                         <p className="w-full text-right">{itemDesc}</p>
                     </li>
                 </ul>

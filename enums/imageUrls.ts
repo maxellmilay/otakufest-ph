@@ -157,7 +157,7 @@ export const ETICKETS = {
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718719154/e-ticket-both_rvgjy0.png',
         itemName: 'OTAKUFEST 2024 TWO DAY BUNDLE',
         price: 420.0,
-        itemDesc: 'SAVE P20',
+        itemDesc: 'SAVE P20!',
         status: 'Available',
         purchaseURL:
             'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
