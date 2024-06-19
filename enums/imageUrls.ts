@@ -29,82 +29,107 @@ export const OF24_TICKETS =
 
 export const EVENTS = {
     SOLO_SKIT: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515389/solo_coskit_m0l3yt.png',
         eventName: 'Solo Skit Cosplay Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSfxnUShZ0f5hYKj_UySg5BiUzK3kIuzoqLL2qQRDE2YYw5Rzg',
     },
     DUO_SKIT: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/duo_coskit_qtbaxi.png',
         eventName: 'Duo Skit Cosplay Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSezmXO3epsnxFuXApPv4j6X9651vXdj2TUhe85qSLh6YuS7ZQ',
     },
     SOLO_DUO_ASIAN_GROOVE: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/ags_solo_duo_xbzyna.png',
         eventName: 'Solo/Duo Asian Groove Showdown',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLScRtqkniAmwwwyQmUTek0JAutUnjaHw4fjd76jlO6RE8MfMWg',
     },
     GROUP_ASIAN_GROOVE: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/ags_group_qsovxw.png',
         eventName: 'Group Asian Groove Showdown',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSdVmtu72WBmpKTrxiTyEA_lDVjN2ECZcmt-T3slXLb2SCUnvg',
     },
     KARAOKE_JAPANESE_SINGING: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/japsing_nwqgsb.png',
         eventName: 'Kara-OK!! Japanese Singing Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSee3wJ4dZ9o9tTLfKI53Nbp_UZOJhFsk_YKxNzt1R1nuU0JBw',
     },
     ORIGINAL_CHARACTER_DESIGN: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/ocd_llmgxw.png',
         eventName: 'Original Character Design Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSfg0XgQI7YBhlXUIbS8Dnr5mdvs2VwzEKL4vFDDwte2wp1-aw',
     },
     ONE_SHOT_COMIC: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/osc_xdnzab.png',
         eventName: 'One-Shot Comic Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSehcJNy5v4OWG3qTQkD4_Pb3OD-YFIXWljNl4QiqykiOKTzWw',
     },
     ANIMATION: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/animotion_gif_rg0uj7.gif',
         eventName: 'AniMotion! Animation Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSdNaXgg4BfZUlGGhfgINULA-32nWwgbcfJ6aZ7LNsDCkNKLWg',
     },
     COMING_SOON: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/coming_soon_por0sv.png',
         eventName: '??? Competition',
+        eventURL: '',
     },
 };
 
 export const PARTNERED_EVENTS = {
     SABERSTURM: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/sabersturm_szozxk.png',
         eventName: 'Sabersturm Competition',
-    },
-    YUGIOH: {
-        eventUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515388/ygo_blk_xxxs80.png',
-        eventName: '??? Competition',
-    },
-    VANGUARD: {
-        eventUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_blk_wimd03.png',
-        eventName: '??? Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLScHr-cSn6CxjbIOJuJHU8RyULnOeB597Zk7zRfU5za_WwFfCQ',
     },
     GUNPLA: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/gunpla_blk_zqww85.png',
         eventName: '??? Competition',
+        eventURL:
+            'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSfpOaoZtw7tpWTR0GIYmbnbdN9NBIUdy8bnPiz5D9i-kY_ZQg',
+    },
+    YUGIOH: {
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515388/ygo_blk_xxxs80.png',
+        eventName: '??? Competition',
+        eventURL: '',
+    },
+    VANGUARD: {
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_blk_wimd03.png',
+        eventName: '??? Competition',
+        eventURL: '',
     },
     DND: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/dnd_blk_b8zvvt.png',
         eventName: '??? Competition',
+        eventURL: '',
     },
     COMING_SOON: {
-        eventUrl:
+        imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/coming_soon_por0sv.png',
         eventName: '??? Competition',
+        eventURL: '',
     },
 };
 
