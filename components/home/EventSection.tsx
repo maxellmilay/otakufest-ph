@@ -4,8 +4,8 @@ import { EVENTS, PARTNERED_EVENTS } from '@/enums/imageUrls';
 
 const EventSection = () => {
     return (
-        <div className="flex flex-col gap-3 items-center justify-around text-center bg-site-main w-full p-10 md:p-20">
-            <div className="flex flex-col text-white w-full">
+        <div className="flex flex-col gap-3 items-center justify-around text-center bg-cover bg-center bg-theme text-site-main w-full p-10 md:p-20">
+            <div className="flex flex-col w-full">
                 <p className="text-4xl md:text-6xl font-bold w-full mb-5">
                     EVENTS
                 </p>
@@ -28,8 +28,9 @@ const EventSection = () => {
                 {Object.values(EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
-                        imageUrl={currentEvent.eventUrl}
+                        imageUrl={currentEvent.imageUrl}
                         name={currentEvent.eventName}
+                        eventURL={currentEvent.eventURL}
                     />
                 ))}
             </div>
@@ -43,8 +44,9 @@ const EventSection = () => {
                 {Object.values(PARTNERED_EVENTS).map((currentEvent) => (
                     <EventImage
                         key={currentEvent.eventName}
-                        imageUrl={currentEvent.eventUrl}
+                        imageUrl={currentEvent.imageUrl}
                         name={currentEvent.eventName}
+                        eventURL={currentEvent.eventURL}
                     />
                 ))}
             </div>

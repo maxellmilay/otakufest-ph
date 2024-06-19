@@ -18,7 +18,7 @@ const SaleItem = (props: IProps) => {
     const { imageUrl, itemName, price, itemDesc, status, purchaseURL, tag } =
         props;
     return (
-        <div className="group relative w-full lg:w-1/3 flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main ease-in duration-100 overflow-hidden">
+        <div className="group relative w-full flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main ease-in duration-100 overflow-hidden">
             {status === 'Available' ? (
                 <div className="absolute flex w-full h-full z-10 inset-0 bg-gray-500/[0.2] items-center justify-center hidden group-hover:flex">
                     <a href={purchaseURL}>
@@ -62,11 +62,7 @@ const SaleItem = (props: IProps) => {
                         </div>
                         <p className="font-bold">₱{price}</p>
                     </li>
-                    <li className="flex flex-row justify-around items-center mb-2">
-                        <FaCircleInfo
-                            size={'3.5vh'}
-                            className="mr-2 w-6 text-site-main"
-                        />
+                    <li className="w-full bg-site-main/[0.15] justify-around items-center rounded-lg mb-2 p-2">
                         <p className="w-full text-right">{itemDesc}</p>
                     </li>
                 </ul>
