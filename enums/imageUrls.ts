@@ -26,6 +26,8 @@ export const OF24_MAIN_VISUAL =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718514563/of24visual_bdbs49.png';
 export const OF24_TICKETS =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718517089/tickets_fokjkg.jpg';
+export const OF24_VENUE =
+    'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815906/smseaside_vxbbdv.jpg';
 
 export const EVENTS = {
     SOLO_SKIT: {
@@ -102,26 +104,26 @@ export const PARTNERED_EVENTS = {
     },
     GUNPLA: {
         imageUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/gunpla_blk_zqww85.png',
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/gunpla_inzsrh.png',
         eventName: '??? Competition',
         eventURL:
             'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSfpOaoZtw7tpWTR0GIYmbnbdN9NBIUdy8bnPiz5D9i-kY_ZQg',
     },
     YUGIOH: {
         imageUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515388/ygo_blk_xxxs80.png',
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515389/ygo_rtczy8.png',
         eventName: '??? Competition',
         eventURL: '',
     },
     VANGUARD: {
         imageUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_blk_wimd03.png',
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_vvdnnu.png',
         eventName: '??? Competition',
         eventURL: '',
     },
     DND: {
         imageUrl:
-            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/dnd_blk_b8zvvt.png',
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/dnd_fvwhpn.png',
         eventName: '??? Competition',
         eventURL: '',
     },
@@ -228,7 +230,8 @@ export const PHYS_TICKETS = {
 
 export const MERCH = {
     SHIRT: {
-        imageUrl: '/shirt both.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815905/shirt_both_ixlj4t.png',
         itemName: 'T-SHIRT',
         price: 300.0,
         itemDesc: 'Limited edition, (20-2XL)',
@@ -238,7 +241,8 @@ export const MERCH = {
         tag: 'Physical',
     },
     TOTE_BAG: {
-        imageUrl: '/TOTE BAG.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815905/TOTE_BAG_wi9jbx.png',
         itemName: 'TOTE BAG',
         price: 180.0,
         itemDesc: 'Limited edition',
@@ -248,7 +252,8 @@ export const MERCH = {
         tag: 'Physical',
     },
     ACRYLIC_PIN: {
-        imageUrl: '/ACRYLIC PIN.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815906/ACRYLIC_PIN_jqw2iv.png',
         itemName: 'ACRYLIC PIN',
         price: 80.0,
         itemDesc: 'Limited edition',
@@ -258,7 +263,8 @@ export const MERCH = {
         tag: 'Physical',
     },
     FOLDABLE_FAN: {
-        imageUrl: '/ROUND FAN.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815905/ROUND_FAN_zo4mxq.png',
         itemName: 'FOLDABLE FAN',
         price: 30.0,
         itemDesc: 'Limited edition',
@@ -268,7 +274,8 @@ export const MERCH = {
         tag: 'Physical',
     },
     MERCH_BUNDLE: {
-        imageUrl: '/merch bundle.png',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815905/merch_bundle_zuhj1n.png',
         itemName: 'ALL-IN MERCH BUNDLE',
         price: 500.0,
         itemDesc: 'Save P90!',

@@ -1,21 +1,14 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { FaArrowRight } from 'react-icons/fa6';
+import React, { useState, useEffect } from 'react';
 import { CarouselCard } from './CarouselCard';
 import {
     OF24_BACKGROUND,
     OF24_CAROUSEL_1,
     OF24_CAROUSEL_2,
+    OF24_VENUE,
 } from '@/enums/imageUrls';
 import CarouselBackground from './CarouselBackground';
 
-const images = [
-    '/smseaside.jpg',
-    OF24_CAROUSEL_2,
-    OF24_BACKGROUND,
-    OF24_CAROUSEL_1,
-];
+const images = [OF24_VENUE, OF24_CAROUSEL_2, OF24_BACKGROUND, OF24_CAROUSEL_1];
 
 export const HomePage = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
