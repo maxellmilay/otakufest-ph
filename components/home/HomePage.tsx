@@ -58,7 +58,7 @@ export const HomePage = () => {
                 news={news}
                 images={images}
             />
-            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly  h-[20%] sm:h-[18%] w-full p-4 space-x-4 md:space-x-2 overflow-x-auto overflow-y-hidden ">
+            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly  h-[18%] w-full p-4 space-x-4 md:space-x-2 overflow-x-auto overflow-y-hidden hide-scrollbar">
                 {news.map((card, index) => (
                     <CarouselCard
                         key={index}
