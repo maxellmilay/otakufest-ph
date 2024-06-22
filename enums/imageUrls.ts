@@ -285,3 +285,45 @@ export const MERCH = {
         tag: 'Physical',
     },
 };
+
+export const GUESTS = [
+    {
+        name: 'Miu',
+        description:
+            'Miu is a cosplayer famously known for her “moe” cosplays. Outside of the intricate costumes is a passionate person who turns to many interesting hobbies: she streams and plays games, illustrates, crafts, and has a knack for make-up! From a humble beginning of loving anime and manga since elementary days, Miu worked hard to become the cosplayer she is today. She’s now seen as a darling of Vietnam’s cosplay scene. A cute beauty and a cuter personality!',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718839118/miu_dmjkfo.png',
+        socials: {
+            facebook: 'https://www.facebook.com/Miucosplayer93',
+            youtube: 'https://youtube.com/@chaumiu',
+            twitch: 'https://www.twitch.tv/miu_cosplayer',
+            twitter: 'https://twitter.com/Milky_choco93',
+        },
+    },
+    {
+        name: 'Wiru',
+        description:
+            'Will, known popularly as Wiru, is a highly respected cosplayer known for versatility in presenting stunning cosplays–as both masculine and feminine characters! With an immense love for cosplay, Wiru gives back to the community by sharing moments created with other cosplayers and giving cosplay tutorials and advice through Youtube videos. Handsome, beautiful, and a generous personality to boot!',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718839118/wiru_eafxs2.png',
+        socials: {
+            instagram: 'https://www.instagram.com/willson618',
+            twitter: 'https://twitter.com/wiru_son',
+            youtube: 'https://www.youtube.com/@WirusonCH',
+        },
+    },
+    {
+        name: 'Kiichan',
+        description:
+            'Kitsui Akira, also affectionately known as Kiichan, is a 9-tailed Cosmic Kitsune who crash landed on earth and now spends her days receiving headpats and eating sushi. She’s an out-of-this-world Vtuber who’s particularly known for her singing prowess. She can even sing in 10 different languages! Many of her skills are self taught talents that include illustration, singing, voice acting, and video editing. In her downtime, you can find her gaming or streaming on her channels. She’s as bright as the stars above!',
+        imageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718839118/kiichan_krutkl.png',
+        socials: {
+            youtube: 'https://www.youtube.com/@KitsuiAkira',
+            twitch: 'https://twitch.tv/kiichan',
+            tiktok: 'https://tiktok.com/@xkiichan',
+            twitter: 'https://twitter.com/KitsuiAkira',
+            instagram: 'https://instagram.com/kitsuiakira',
+        },
+    },
+];
