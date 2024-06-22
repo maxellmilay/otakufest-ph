@@ -1,3 +1,5 @@
+import ExternalUrl from '@/enums/externalUrls';
+
 export const OF24_BACKGROUND =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718507762/2024-custombg_lxqwxq.png';
 export const OF24_PAN =
@@ -166,8 +168,7 @@ export const ETICKETS = {
         price: 220.0,
         itemDesc: 'For AUGUST 17 ONLY',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Digital',
     },
     DAY2: {
@@ -177,8 +178,7 @@ export const ETICKETS = {
         price: 220.0,
         itemDesc: 'For AUGUST 18 ONLY',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Digital',
     },
     BOTH_DAYS: {
@@ -188,8 +188,7 @@ export const ETICKETS = {
         price: 420.0,
         itemDesc: 'SAVE P20!',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Digital',
     },
 };
@@ -202,8 +201,7 @@ export const PHYS_TICKETS = {
         price: 230.0,
         itemDesc: 'For AUGUST 17 ONLY',
         status: 'Meetup date has already passed. Keep posted for more updates!',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     DAY2: {
@@ -213,8 +211,7 @@ export const PHYS_TICKETS = {
         price: 230.0,
         itemDesc: 'For AUGUST 18 ONLY',
         status: 'Meetup date has already passed. Keep posted for more updates!',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     BOTH_DAYS: {
@@ -224,8 +221,7 @@ export const PHYS_TICKETS = {
         price: 450.0,
         itemDesc: 'Save P10 for both days',
         status: 'Meetup date has already passed. Keep posted for more updates!',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
 };
@@ -238,8 +234,7 @@ export const MERCH = {
         price: 300.0,
         itemDesc: 'Limited edition, (20-2XL)',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     TOTE_BAG: {
@@ -249,8 +244,7 @@ export const MERCH = {
         price: 180.0,
         itemDesc: 'Limited edition',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     ACRYLIC_PIN: {
@@ -260,8 +254,7 @@ export const MERCH = {
         price: 80.0,
         itemDesc: 'Limited edition',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     FOLDABLE_FAN: {
@@ -271,8 +264,7 @@ export const MERCH = {
         price: 30.0,
         itemDesc: 'Limited edition',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
     MERCH_BUNDLE: {
@@ -282,8 +274,7 @@ export const MERCH = {
         price: 500.0,
         itemDesc: 'Save P90!',
         status: 'Available',
-        purchaseURL:
-            'https://neartail.com/public/112519215755839682426/all/form/1FAIpQLScR8MZV6PUVhzaMnos3IEmig4c-oADinm_sEYiNhGGhhU4ltg',
+        purchaseURL: ExternalUrl.PRE_ORDER_FORM,
         tag: 'Physical',
     },
 };
