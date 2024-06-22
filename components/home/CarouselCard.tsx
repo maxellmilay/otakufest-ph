@@ -18,16 +18,16 @@ export const CarouselCard: React.FC<CarouselCardProps> = ({
     styles,
 }) => {
     return (
-        <div
-            className={` bg-black/40 w-[40%] flex-shrink-0 md:w-[20%] h-[100%] rounded-sm px-2 py-1 lg:p-4  backdrop-blur-sm cursor-pointer hover:scale-105 hover:duration-300 duration-300 ${styles}`}
+        <button
+            className={`bg-black/40 w-[40%] text-left flex-shrink-0 md:w-[20%] h-[100%] rounded-sm p-2 sm:p-3 md:p-4 lg:p-7  backdrop-blur-sm cursor-pointer hover:scale-105 hover:duration-300 duration-300 ${styles}`}
             onClick={onClick}
         >
-            <span className="font-bold md:text-[0.7rem] text-[0.6rem] lg:text-base">
+            <p className="font-bold md:text-[0.7rem] text-[0.6rem] lg:text-base">
                 {card.title}
-            </span>
-            <p className="lg:text-xs md:text-[0.45rem] text-[0.4rem]  ">
+            </p>
+            <p className="lg:text-xs md:text-[0.45rem] text-[0.4rem] truncate">
                 {card.description}
             </p>
-        </div>
+        </button>
     );
 };
