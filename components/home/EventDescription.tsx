@@ -1,12 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
+import ExternalLink from '@/enums/externalUrls';
 import { OF24_LOGO_WHITE, OF24_MAIN_VISUAL } from '@/enums/imageUrls';
-import { FaFacebookSquare } from 'react-icons/fa';
-import { FaSquareXTwitter, FaSquareInstagram } from 'react-icons/fa6';
+import {
+    RiFacebookCircleFill,
+    RiTwitterFill,
+    RiInstagramFill,
+    RiFacebookCircleLine,
+    RiTwitterLine,
+    RiInstagramLine,
+} from 'react-icons/ri';
 
 const EventDescription = () => {
     return (
-        <div className="flex flex-col justify-center items-center text-center bg-site-main w-full h-[75dvh] overflow-hidden relative">
+        <div className="flex flex-col justify-center items-center text-center bg-site-main w-full h-screen overflow-hidden relative">
             <div className="absolute bottom-0 flex flex-col h-1/2 w-full md:h-full md:w-1/2 md:right-0 z-[15] items-center text-center justify-center md:bg-gradient-to-l bg-gradient-to-t to-transparent from-site-main px-5 md:px-20">
                 <div className="flex flex-row">
                     <figure className="aspect-square w-10 md:w-16 relative">
@@ -29,10 +36,34 @@ const EventDescription = () => {
                     Come join our event happening this{' '}
                     <span className="font-bold"> AUGUST 17-18, 2024 </span> !
                 </span>
-                <div className="flex flex-row mt-7 sm:mt-16 gap-4">
-                    <FaFacebookSquare size={'4vh'} />
-                    <FaSquareXTwitter size={'4vh'} />
-                    <FaSquareInstagram size={'4vh'} />
+                <div className="flex flex-row text-site-secondary mt-7 sm:mt-16 gap-4">
+                    <a
+                        rel="noreferrer"
+                        href={ExternalLink.FB}
+                        target="_blank"
+                        className="group"
+                    >
+                        <RiFacebookCircleFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
+                        <RiFacebookCircleLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
+                    </a>
+                    <a
+                        rel="noreferrer"
+                        href={ExternalLink.TWITTER}
+                        target="_blank"
+                        className="group"
+                    >
+                        <RiTwitterFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
+                        <RiTwitterLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
+                    </a>
+                    <a
+                        rel="noreferrer"
+                        href={ExternalLink.INSTAGRAM}
+                        target="_blank"
+                        className="group"
+                    >
+                        <RiInstagramFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
+                        <RiInstagramLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
+                    </a>
                 </div>
             </div>
             <div className="absolute top-0 flex-col w-full h-1/2 bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
