@@ -33,8 +33,8 @@ const CarouselBackground: React.FC<CarouselBackgroundProps> = ({
                 />
             </div>
             {currentIndex == 0 && (
-                <div className="flex flex-col items-center justify-center sm:justify-normal  text-center h-full w-full p-10  md:p-20">
-                    <figure className="relative aspect-square w-[50vmin] cursor-pointer z-10 hover:scale-125 duration-200 xs:mt-8">
+                <div className="flex flex-col items-center justify-center xs:justify-normal  text-center h-full  w-full  ">
+                    <figure className="relative aspect-square w-[50vmin] cursor-pointer z-10 hover:scale-110 duration-200 xs:mt-16">
                         <Image
                             src={OF24_LOGO}
                             alt="guest"
@@ -43,14 +43,14 @@ const CarouselBackground: React.FC<CarouselBackgroundProps> = ({
                         />
                     </figure>
 
-                    <span className="md:text-[2.5vw] z-10 text-[0.8rem] xs:font-semibold ">
+                    <span className="lg:text-4xl z-10 text-[0.8rem] font-semibold mt-[-10px] xs:mt-[-30px] ">
                         Connecting the world, one hobby at a time
                     </span>
-                    <div className="flex space-x-1 items-center">
-                        <span className="md:text-[1.5vw] text-[0.7rem] xs:font-semibold z-10">
-                            August 17-18, 2024 •
+                    <div className="flex flex-col items-center">
+                        <span className="lg:text-2xl text-[0.7rem] font-semibold z-10">
+                            August 17-18, 2024
                         </span>
-                        <figure className="sm:w-52 w-32   z-10">
+                        <figure className="lg:w-44 w-32 z-10">
                             <Image
                                 src={SPONSOR.SM_SEASIDE}
                                 alt="sm-seaside logo"
