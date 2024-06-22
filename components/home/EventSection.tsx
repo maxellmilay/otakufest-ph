@@ -25,9 +25,9 @@ const EventSection = () => {
                 EVENTS AND COMPETITIONS
             </p>
             <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
-                {Object.values(EVENTS).map((currentEvent) => (
+                {Object.values(EVENTS).map((currentEvent, index) => (
                     <EventImage
-                        key={currentEvent.eventName}
+                        key={index + currentEvent.eventName}
                         imageUrl={currentEvent.imageUrl}
                         name={currentEvent.eventName}
                         eventURL={currentEvent.eventURL}
@@ -41,9 +41,9 @@ const EventSection = () => {
                 Want to partner with us for a competition? Contact us!
             </p>
             <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
-                {Object.values(PARTNERED_EVENTS).map((currentEvent) => (
+                {Object.values(PARTNERED_EVENTS).map((currentEvent, index) => (
                     <EventImage
-                        key={currentEvent.eventName}
+                        key={index + currentEvent.eventName}
                         imageUrl={currentEvent.imageUrl}
                         name={currentEvent.eventName}
                         eventURL={currentEvent.eventURL}
