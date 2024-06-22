@@ -66,7 +66,6 @@ const EventDescription = () => {
                     </a>
                 </div>
             </div>
-            <div className="absolute top-0 flex-col w-full h-1/2 bg-gradient-to-b to-transparent from-site-main flex items-center justify-end z-10"></div>
             <figure className="relative aspect-square w-[75dvh] sm:w-[150dvh] md:w-[200dvh] md:ml-[-85vh]">
                 <Image
                     src={OF24_MAIN_VISUAL}
