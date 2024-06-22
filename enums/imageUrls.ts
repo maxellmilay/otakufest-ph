@@ -109,6 +109,8 @@ export const PARTNERED_EVENTS = {
     GUNPLA: {
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/gunpla_inzsrh.png',
+        blackImageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/gunpla_blk_zqww85.png',
         eventName: '??? Competition',
         eventURL:
             'https://formfacade.com/public/112519215755839682426/all/form/1FAIpQLSfpOaoZtw7tpWTR0GIYmbnbdN9NBIUdy8bnPiz5D9i-kY_ZQg',
@@ -116,18 +118,24 @@ export const PARTNERED_EVENTS = {
     YUGIOH: {
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515389/ygo_rtczy8.png',
+        blackImageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515388/ygo_blk_xxxs80.png',
         eventName: '??? Competition',
         eventURL: '',
     },
     VANGUARD: {
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_vvdnnu.png',
+        blackImageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_blk_wimd03.png',
         eventName: '??? Competition',
         eventURL: '',
     },
     DND: {
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/dnd_fvwhpn.png',
+        blackImageUrl:
+            'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/dnd_blk_b8zvvt.png',
         eventName: '??? Competition',
         eventURL: '',
     },
