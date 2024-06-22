@@ -1,16 +1,28 @@
 import React from 'react';
+import Image from 'next/image';
 
-const VtuberSection = () => {
+const ComingSoon = () => {
     return (
-        <div className="flex flex-col items-center justify-center text-center h-[30vh] md:h-[75vh] w-screen my-10 md:my-16 lg:my-20 relative bg-cover bg-center text-site-main bg-theme">
-            <span className="text-2xl md:text-4xl font-bold px-10 w-ful">
-                COMING SOON!
-            </span>
-            <span className="md:text-[1.5vw] z-10">
-                Stand by for more updates!
-            </span>
+        <div className="flex flex-col md:flex-row items-center h-[30vh] w-full relative text-site-main bg-transparent md:py-56">
+            <figure className="relative aspect-square w-1/2 scale-115 md:scale-50 duration-200 mt-4">
+                <Image
+                    src="/comingSoon.png"
+                    alt="guest"
+                    fill
+                    className="object-contain"
+                />
+            </figure>
+            <div className="flex flex-col md:w-1/2 items-center justify-center md:items-start">
+                <span className="text-center underline md:text-justify text-2xl md:text-4xl font-bold">
+                    COMING SOON!
+                </span>
+                <span className="text-center md:text-justify w-3/4 text-xs md:text-xl md:text-[1.5vw] z-10">
+                    We are cooking up more things for you this OtakuFest! Stand
+                    by for more updates!
+                </span>
+            </div>
         </div>
     );
 };
 
-export default VtuberSection;
+export default ComingSoon;
