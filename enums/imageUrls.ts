@@ -28,6 +28,8 @@ export const OF24_TICKETS =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718517089/tickets_fokjkg.jpg';
 export const OF24_VENUE =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718815906/smseaside_vxbbdv.jpg';
+export const OF24_COMING_SOON =
+    'https://res.cloudinary.com/dhyoibvtc/image/upload/v1719024894/comingSoon_olfubt.png';
 
 export const EVENTS = {
     SOLO_SKIT: {
