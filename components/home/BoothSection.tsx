@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoHeartCircle } from 'react-icons/io5';
+import ExternalLink from '../generics/ExternalLink';
 
 const BoothSection = () => {
     return (
@@ -14,16 +15,14 @@ const BoothSection = () => {
                         <p className="w-full">
                             Support local! Registrations for all booths are{' '}
                             <b>CLOSED</b>.{' '}
-                            <u>
-                                Check out our FAQ here if you&apos;re a boother!
-                            </u>
+                            <ExternalLink content="Check out our FAQ here if you're a boother!" />
                         </p>
                     </li>
                     <li className="flex flex-row items-center mb-2">
                         <IoHeartCircle size={'5vh'} className="mr-2" />
                         <p className="w-full">
                             Interested in collaborating, partnering, or working
-                            with us? <u>Email us here!</u>
+                            with us? <ExternalLink content="Email us here!" />
                         </p>
                     </li>
                     <li className="flex flex-row items-center">
@@ -31,12 +30,10 @@ const BoothSection = () => {
                         <p className="w-full">
                             Not sure if your products or displays are suitable
                             for our event?{' '}
-                            <a
-                                href="https://bit.ly/43W8Rbw"
-                                className="underline hover:text-black"
-                            >
-                                Check out our detailed content filtering guide!
-                            </a>
+                            <ExternalLink
+                                content="Check out our detailed content filtering guide!"
+                                link="https://bit.ly/43W8Rbw"
+                            />
                         </p>
                     </li>
                 </ul>

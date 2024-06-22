@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Routes from '@/enums/routes';
 import SaleItem from './SaleItem';
 import { ETICKETS, PHYS_TICKETS, MERCH } from '@/enums/imageUrls';
+import ExternalLink from '../generics/ExternalLink';
+import InternalLink from '../generics/InternalLink';
 
 const SalesSection = () => {
     return (
@@ -112,10 +114,12 @@ const SalesSection = () => {
             <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
                 For concerns regarding your purchases from Otakufest 2024,
                 consider{' '}
-                <Link href={Routes.CONTACT_US} className="underline">
-                    reaching out to us
-                </Link>{' '}
-                or sending us an e-mail at <u>sales.otakufest@gmail.com</u>.
+                <InternalLink
+                    content="reaching out to us"
+                    route={Routes.CONTACT_US}
+                />{' '}
+                or sending us an e-mail at{' '}
+                <ExternalLink content="sales.otakufest@gmail.com" />
             </span>
         </div>
     );
