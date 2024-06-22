@@ -1,13 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import { OF24_COMING_SOON } from '@/enums/imageUrls';
 
 const ComingSoon = () => {
     return (
         <div className="flex flex-col md:flex-row items-center h-[30vh] w-full relative text-site-main bg-transparent md:py-56">
             <figure className="relative aspect-square w-1/2 scale-115 md:scale-50 duration-200 mt-4">
                 <Image
-                    src="/comingSoon.png"
-                    alt="guest"
+                    src={OF24_COMING_SOON}
+                    alt="coming soon"
                     fill
                     className="object-contain"
                 />
