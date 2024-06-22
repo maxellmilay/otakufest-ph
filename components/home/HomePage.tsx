@@ -31,7 +31,7 @@ export const HomePage = () => {
         {
             title: 'Otakufest 2024',
             description:
-                'Connecting the world, one hobby at a time \n August 10-11, 2024 • SM Seaside Cebu',
+                'Connecting the world, one hobby at a time \n August 10-11, 2024 at SM Seaside Cebu',
             link: '',
         },
         {
@@ -58,10 +58,10 @@ export const HomePage = () => {
                 news={news}
                 images={images}
             />
-            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly  h-[18%] w-full p-4 space-x-4 md:space-x-2 overflow-x-auto overflow-y-hidden hide-scrollbar">
+            <div className="absolute bg-black/30 bottom-0 flex flex-row items-center justify-evenly w-full p-5 sm:py-10 space-x-4 md:space-x-2 overflow-x-auto overflow-y-hidden hide-scrollbar">
                 {news.map((card, index) => (
                     <CarouselCard
-                        key={index}
+                        key={index + card.description}
                         card={card}
                         onClick={() => handleCardClick(index)}
                         styles={`${index == currentImageIndex ? 'scale-110' : ''}`}
