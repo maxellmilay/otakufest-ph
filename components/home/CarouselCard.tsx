@@ -25,7 +25,7 @@ export const CarouselCard: React.FC<CarouselCardProps> = ({
             <p className="font-bold md:text-[0.7rem] text-[0.6rem] lg:text-base">
                 {card.title}
             </p>
-            <p className="lg:text-xs md:text-[0.45rem] text-[0.4rem]  ">
+            <p className="lg:text-xs md:text-[0.45rem] text-[0.4rem] truncate">
                 {card.description}
             </p>
         </button>
