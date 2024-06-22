@@ -13,9 +13,9 @@ import {
 
 const TheFooter = () => {
     return (
-        <footer className="flex flex-col md:flex-row md:h-[10vw] md:gap-32 bg-white text-black justify-center items-center p-5 z-20">
-            <div className="flex flex-col md:flex-row items-center gap-2 text-2xl md:text-5xl">
-                <figure className="relative aspect-[99/115] h-[7.5vh]">
+        <footer className="flex flex-row gap-0 md:gap-32 bg-white text-black justify-between md:justify-center items-center px-3 py-5 sm:px-5 md:p-10 z-20">
+            <div className="flex flex-row items-center gap-2">
+                <figure className="relative aspect-[99/115] h-10 md:h-[7.5vh]">
                     <Image
                         src={LOGO}
                         alt="logo"
@@ -23,10 +23,10 @@ const TheFooter = () => {
                         className="object-cover"
                     />
                 </figure>
-                OTAKUFEST
+                <p className="text-xs md:text-5xl">OTAKUFEST</p>
             </div>
             <div className="flex flex-col gap-1 text-black">
-                <div className="flex flex-row justify-center gap-3 mt-1">
+                <div className="flex flex-row justify-end md:justify-center gap-3">
                     <a
                         rel="noreferrer"
                         href={ExternalLink.FB}
@@ -35,11 +35,11 @@ const TheFooter = () => {
                     >
                         <RiFacebookCircleFill
                             color="black"
-                            className="h-12 w-12 group-hover:hidden"
+                            className="h-5 md:h-12 w-5 md:w-12 group-hover:hidden"
                         />
                         <RiFacebookCircleLine
                             color="black"
-                            className="h-12 w-12 hidden group-hover:block"
+                            className="h-5 md:h-12 w-5 md:w-12 hidden group-hover:block"
                         />
                     </a>
                     <a
@@ -50,11 +50,11 @@ const TheFooter = () => {
                     >
                         <RiTwitterFill
                             color="black"
-                            className="h-12 w-12 group-hover:hidden"
+                            className="h-5 md:h-12 w-5 md:w-12 group-hover:hidden"
                         />
                         <RiTwitterLine
                             color="black"
-                            className="h-12 w-12 hidden group-hover:block"
+                            className="h-5 md:h-12 w-5 md:w-12 hidden group-hover:block"
                         />
                     </a>
                     <a
@@ -65,15 +65,15 @@ const TheFooter = () => {
                     >
                         <RiInstagramFill
                             color="black"
-                            className="h-12 w-12 group-hover:hidden"
+                            className="h-5 md:h-12 w-5 md:w-12 group-hover:hidden"
                         />
                         <RiInstagramLine
                             color="black"
-                            className="h-12 w-12 hidden group-hover:block"
+                            className="h-5 md:h-12 w-5 md:w-12 hidden group-hover:block"
                         />
                     </a>
                 </div>
-                <p className="text-gray-500 text-center text-xs">
+                <p className="text-gray-500 text-center text-xs md:text-md">
                     © 2023. All Rights Reserved.
                 </p>
             </div>
