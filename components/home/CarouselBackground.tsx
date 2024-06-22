@@ -1,7 +1,6 @@
 import { FaArrowRight } from 'react-icons/fa6';
 import Image from 'next/image';
-import { OF24_LOGO } from '@/enums/imageUrls';
-import { SPONSOR } from '@/enums/imageUrls';
+import { OF24_LOGO, SPONSOR } from '@/enums/imageUrls';
 
 interface News {
     title: string;

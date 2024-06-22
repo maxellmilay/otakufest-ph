@@ -1,7 +1,9 @@
 'use client';
+import { IoMdClock } from 'react-icons/io';
 import React, { useRef, useState, useEffect } from 'react';
 
 export const EventTimer = () => {
+    const [isTimerVisible, setIsTimerVisible] = useState<boolean>(false);
     const [timer, setTimer] = useState({
         days: '00',
         hours: '00',
@@ -53,13 +55,26 @@ export const EventTimer = () => {
         };
     }, []);
 
+    const handleVisibilityToggle = () => {
+        setIsTimerVisible(!isTimerVisible);
+    };
+
     return (
-        <div className="fixed p-2 xs:p-3 md:p-4 bg-black/50 z-20  top-32 lg:top-52 right-0 ">
-            <div className="flex flex-col items-center xs:gap-y-1">
-                <p className="font-bold text-xs md:text-base lg:text-xl tracking-wide">
+        <div className="flex fixed p-2 xs:p-3 md:p-4 bg-black/50 z-20  top-32 lg:top-52 right-0">
+            <div
+                className="flex flex-col items-center  xs:gap-y-1"
+                style={{
+                    transformOrigin: 'top center',
+                    animation: isTimerVisible
+                        ? 'growDown 500ms ease-out forwards'
+                        : 'none',
+                    display: isTimerVisible ? 'block' : 'none',
+                }}
+            >
+                <p className="font-bold text-xs md:text-base lg:text-xl tracking-wide text-center">
                     Otakufest is coming soon!
                 </p>
-                <p className="text-xs">We will launch in</p>
+                <p className="text-xs text-center">We will launch in</p>
                 <div className="flex justify-evenly gap-x-2 w-full px-4">
                     <div className="flex flex-col items-center">
                         <span className="text-xs md:text-base  lg:text-2xl font-bold">
@@ -87,6 +102,12 @@ export const EventTimer = () => {
                     </div>
                 </div>
             </div>
+            <button
+                onClick={handleVisibilityToggle}
+                className={`flex items-center hover:scale-110 duration-500 ${isTimerVisible ? 'justify-end' : 'justify-center'}`}
+            >
+                <IoMdClock size={30} />
+            </button>
         </div>
     );
 };
