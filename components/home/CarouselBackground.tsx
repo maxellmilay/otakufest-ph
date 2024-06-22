@@ -1,6 +1,7 @@
 import { FaArrowRight } from 'react-icons/fa6';
 import Image from 'next/image';
 import { OF24_LOGO } from '@/enums/imageUrls';
+import { SPONSOR } from '@/enums/imageUrls';
 
 interface News {
     title: string;
@@ -32,8 +33,8 @@ const CarouselBackground: React.FC<CarouselBackgroundProps> = ({
                 />
             </div>
             {currentIndex == 0 && (
-                <div className="flex flex-col items-center justify-center  text-center h-full w-full p-10 mb-20 md:mb-32  md:p-20">
-                    <figure className="relative aspect-square w-[50vmin] cursor-pointer z-10 hover:scale-125 duration-200 xs:mt-8">
+                <div className="flex flex-col items-center justify-center xs:justify-normal  text-center h-full  w-full  ">
+                    <figure className="relative aspect-square w-[50vmin] cursor-pointer z-10 hover:scale-110 duration-200 xs:mt-16">
                         <Image
                             src={OF24_LOGO}
                             alt="guest"
@@ -41,12 +42,23 @@ const CarouselBackground: React.FC<CarouselBackgroundProps> = ({
                             className="object-cover "
                         />
                     </figure>
-                    <span className="md:text-[2.5vw] z-10 text-[0.8rem] ">
+
+                    <span className="lg:text-4xl z-10 text-[0.8rem] font-semibold mt-[-10px] xs:mt-[-30px] ">
                         Connecting the world, one hobby at a time
                     </span>
-                    <span className="md:text-[1.5vw] text-[0.7rem] z-10">
-                        August 17-18, 2024 • SM Seaside Cebu
-                    </span>
+                    <div className="flex flex-col items-center">
+                        <span className="lg:text-2xl text-[0.7rem] font-semibold z-10">
+                            August 17-18, 2024
+                        </span>
+                        <figure className="lg:w-44 w-32 z-10">
+                            <Image
+                                src={SPONSOR.SM_SEASIDE}
+                                alt="sm-seaside logo"
+                                width={200}
+                                height={200}
+                            />
+                        </figure>
+                    </div>
                 </div>
             )}
 
