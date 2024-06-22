@@ -8,6 +8,7 @@ import {
     RiTiktokFill,
     RiTwitchFill,
 } from 'react-icons/ri';
+import ExternalUrls from '@/enums/externalUrls';
 
 interface PropsInteface {
     name: string;
@@ -63,6 +64,12 @@ const GuestCard = (props: PropsInteface) => {
                 <p className="text-wrap text-xs xl:text-sm 2xl:text-md">
                     {description}
                 </p>
+                <a
+                    href={ExternalUrls.PRE_ORDER_FORM}
+                    className={`bg-white text-site-main w-fit px-3 py-2 rounded-md hover:scale-110 duration-200 self-end`}
+                >
+                    Meet & Greet
+                </a>
             </div>
         </div>
     );
