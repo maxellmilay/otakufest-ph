@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
-import { FaShoppingCart } from 'react-icons/fa';
-import { FaCircleInfo } from 'react-icons/fa6';
 import { MdNotInterested } from 'react-icons/md';
+import { useIsVisible } from '../generics/isVisible';
 
 interface IProps {
     imageUrl: string;
@@ -17,8 +16,13 @@ interface IProps {
 const SaleItem = (props: IProps) => {
     const { imageUrl, itemName, price, itemDesc, status, purchaseURL, tag } =
         props;
+    const ref1 = useRef<HTMLDivElement>(null);
+    const isVisible1 = useIsVisible(ref1);
     return (
-        <div className="group relative w-full flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main ease-in duration-100 overflow-hidden">
+        <div
+            ref={ref1}
+            className={`group relative w-full flex flex-col items-center md:p-8 rounded-xl border-2 border-slate-300 drop-shadow-md hover:border-site-main hover:ease-in hover:duration-100 overflow-hidden transition-opacity ease-in duration-500 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}
+        >
             {status === 'Available' ? (
                 <div className="absolute flex w-full h-full z-10 inset-0 bg-gray-500/[0.2] items-center justify-center hidden group-hover:flex">
                     <a href={purchaseURL}>

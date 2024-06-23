@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import {
     RiFacebookCircleFill,
@@ -9,6 +9,7 @@ import {
     RiTwitchFill,
 } from 'react-icons/ri';
 import ExternalUrls from '@/enums/externalUrls';
+import { useIsVisible } from '../generics/isVisible';
 
 interface PropsInteface {
     name: string;
@@ -19,6 +20,8 @@ interface PropsInteface {
 }
 
 const GuestCard = (props: PropsInteface) => {
+    const ref1 = useRef<HTMLDivElement>(null);
+    const isVisible1 = useIsVisible(ref1);
     const { name, description, socials, imageUrl, isLeft } = props;
 
     const socialIcons: { [key: string]: JSX.Element } = {
@@ -32,7 +35,8 @@ const GuestCard = (props: PropsInteface) => {
 
     return (
         <div
-            className={`flex flex-col md:flex-row gap-10 md:gap-20 ${!isLeft && 'md:flex-row-reverse'} items-center px-10`}
+            ref={ref1}
+            className={`flex flex-col md:flex-row gap-10 md:gap-20 ${!isLeft && 'md:flex-row-reverse'} items-center px-10 transition-opacity ease-in duration-500 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}
         >
             <figure className="relative aspect-square w-[80dvw] sm:w-[60dvw] md:w-[50dvw] lg:w-[25dvw] hover:scale-105 duration-200">
                 <Image

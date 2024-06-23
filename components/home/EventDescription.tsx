@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import ExternalLink from '@/enums/externalUrls';
 import { OF24_LOGO_WHITE, OF24_MAIN_VISUAL } from '@/enums/imageUrls';
@@ -10,12 +10,22 @@ import {
     RiTwitterLine,
     RiInstagramLine,
 } from 'react-icons/ri';
+import { useIsVisible } from '../generics/isVisible';
 
 const EventDescription = () => {
+    const ref1 = useRef<HTMLDivElement>(null);
+    const isVisible1 = useIsVisible(ref1);
+    const ref2 = useRef<HTMLElement>(null);
+    const isVisible2 = useIsVisible(ref2);
+    const ref3 = useRef<HTMLDivElement>(null);
+    const isVisible3 = useIsVisible(ref3);
     return (
         <div className="flex flex-col justify-center items-center text-center bg-site-main w-full h-screen overflow-hidden relative">
             <div className="absolute bottom-0 flex flex-col h-1/2 w-full md:h-full md:w-1/2 md:right-0 z-[15] items-center text-center justify-center md:bg-gradient-to-l bg-gradient-to-t to-transparent from-site-main px-5 md:px-20">
-                <div className="flex flex-row">
+                <div
+                    ref={ref1}
+                    className={`flex flex-row transition-opacity ease-in  duration-500  ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}
+                >
                     <figure className="aspect-square w-10 md:w-16 relative">
                         <Image
                             src={OF24_LOGO_WHITE}
@@ -28,7 +38,10 @@ const EventDescription = () => {
                         OTAKUFEST
                     </span>
                 </div>
-                <span className="text-xs sm:text-md md:text-xl mt-4">
+                <span
+                    ref={ref2}
+                    className={`text-xs sm:text-md md:text-xl mt-4 transition-opacity ease-in  duration-500  ${isVisible2 ? 'opacity-100' : 'opacity-0'}`}
+                >
                     Otakufest is the premier and the most anticipated cosplay
                     and hobbies convention in the Visayas, held annually in Cebu
                     City, Philippines. <br />
@@ -36,7 +49,10 @@ const EventDescription = () => {
                     Come join our event happening this{' '}
                     <span className="font-bold"> AUGUST 17-18, 2024 </span> !
                 </span>
-                <div className="flex flex-row text-site-secondary mt-7 sm:mt-16 gap-4">
+                <div
+                    ref={ref3}
+                    className={`flex flex-row text-site-secondary mt-7 sm:mt-16 gap-4 transition-opacity ease-in duration-500 ${isVisible3 ? 'opacity-100' : 'opacity-0'}`}
+                >
                     <a
                         rel="noreferrer"
                         href={ExternalLink.FB}

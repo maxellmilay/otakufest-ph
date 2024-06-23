@@ -1,21 +1,36 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React, { useRef } from 'react';
 import Routes from '@/enums/routes';
 import SaleItem from './SaleItem';
 import { ETICKETS, PHYS_TICKETS, MERCH } from '@/enums/imageUrls';
 import ExternalLink from '../generics/ExternalLink';
 import InternalLink from '../generics/InternalLink';
+import { useIsVisible } from '../generics/isVisible';
 
 const SalesSection = () => {
+    const ref1 = useRef<HTMLDivElement>(null);
+    const isVisible1 = useIsVisible(ref1);
+    const ref2 = useRef<HTMLDivElement>(null);
+    const isVisible2 = useIsVisible(ref2);
+    const ref3 = useRef<HTMLDivElement>(null);
+    const isVisible3 = useIsVisible(ref3);
+    const ref4 = useRef<HTMLDivElement>(null);
+    const isVisible4 = useIsVisible(ref4);
+    const ref5 = useRef<HTMLDivElement>(null);
+    const isVisible5 = useIsVisible(ref5);
     return (
         <div className="flex flex-col items-center justify-evenly bg-white w-full py-10 gap-10 md:py-20 px-4 md:px-[10vw]">
-            <div className="flex flex-col text-site-main">
+            <div
+                ref={ref1}
+                className={`flex flex-col text-site-main transition-opacity ease-in duration-500 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <p className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
                     TICKETS & MERCH
                 </p>
             </div>
-            <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
+            <div
+                ref={ref2}
+                className={`flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5 transition-opacity ease-in duration-500 ${isVisible2 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <p className="text-xl md:text-3xl font-bold w-full">
                     PRE-ORDERS FOR E-TICKET SALES
                 </p>
@@ -45,7 +60,10 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
+            <div
+                ref={ref3}
+                className={`flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5 transition-opacity ease-in duration-500 ${isVisible3 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <p className="text-xl md:text-3xl font-bold w-full">
                     MEETUP FOR LIMITED PHYSICAL TICKETS
                 </p>
@@ -85,7 +103,10 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
+            <div
+                ref={ref4}
+                className={`flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5 transition-opacity ease-in duration-500 ${isVisible4 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <p className="text-xl md:text-3xl font-bold w-full">
                     PREORDER EXCLUSIVE #OF24 MERCH
                 </p>
@@ -111,7 +132,10 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
+            <span
+                ref={ref5}
+                className={`text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4 transition-opacity ease-in duration-500 ${isVisible5 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 For concerns regarding your purchases from Otakufest 2024,
                 consider{' '}
                 <InternalLink

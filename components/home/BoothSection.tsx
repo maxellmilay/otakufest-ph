@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { IoHeartCircle } from 'react-icons/io5';
 import ExternalLink from '../generics/ExternalLink';
+import { useIsVisible } from '../generics/isVisible';
 
 const BoothSection = () => {
+    const ref1 = useRef<HTMLDivElement>(null);
+    const isVisible1 = useIsVisible(ref1);
+    const ref2 = useRef<HTMLDivElement>(null);
+    const isVisible2 = useIsVisible(ref2);
     return (
         <div className="flex flex-col gap-7 md:gap-10 lg:gap-16 xl:gap-20 items-center justify-around text-justify bg-white w-full pt-10 md:pt-20 px-3 sm:px-10 md:px-20">
-            <div className="flex flex-col gap-7 xl:gap-10 text-site-main w-full items-center">
+            <div
+                ref={ref1}
+                className={`flex flex-col gap-7 xl:gap-10 text-site-main w-full items-center transition-opacity ease-in duration-500 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <p className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
                     BOOTHS
                 </p>
@@ -38,7 +46,10 @@ const BoothSection = () => {
                     </li>
                 </ul>
             </div>
-            <div className="grid grid-cols-2 gap-4 md:gap-10">
+            <div
+                ref={ref2}
+                className={`grid grid-cols-2 gap-4 md:gap-10 transition-opacity ease-in  duration-500  ${isVisible2 ? 'opacity-100' : 'opacity-0'}`}
+            >
                 <div className="flex flex-col text-md md:text-xl py-8 md:py-12 lg:py-14 xl:py-16 2xl:py-24 px-3 sm:px-7 gap-4 bg-site-main rounded-lg items-center justify-center text-center">
                     <p className="text-sm md:text-lg xl:text-3xl 2xl:text-4xl font-bold">
                         APPLY FOR ARTIST ALLEY
