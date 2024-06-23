@@ -29,8 +29,10 @@ const EventSection = () => {
                     <EventImage
                         key={index + currentEvent.eventName}
                         imageUrl={currentEvent.imageUrl}
+                        blackImageURL={currentEvent.blackImageUrl}
                         name={currentEvent.eventName}
                         eventURL={currentEvent.eventURL}
+                        isRevealed={currentEvent.isRevealed}
                     />
                 ))}
             </div>
@@ -45,8 +47,10 @@ const EventSection = () => {
                     <EventImage
                         key={index + currentEvent.eventName}
                         imageUrl={currentEvent.imageUrl}
+                        blackImageURL={currentEvent.blackImageUrl}
                         name={currentEvent.eventName}
                         eventURL={currentEvent.eventURL}
+                        isRevealed={currentEvent.isRevealed}
                     />
                 ))}
             </div>
