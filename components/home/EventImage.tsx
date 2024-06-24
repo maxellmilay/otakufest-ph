@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Zoom } from 'react-awesome-reveal';
 
 interface IProps {
     imageUrl: string;
@@ -25,16 +26,18 @@ const EventImage = (props: IProps) => {
     );
 
     return (
-        <div className="flex flex-col items-center text-center text-md md:text-xl gap-2">
-            {isRevealed ? (
-                <Link href={eventURL}>{imageContent}</Link>
-            ) : (
-                imageContent
-            )}
-            <p className="text-xs md:text-sm lg:text-md xl:text-lg">
-                {isRevealed ? name : '??? Competition'}
-            </p>
-        </div>
+        <Zoom duration={300}>
+            <div className="flex flex-col items-center text-center text-md md:text-xl gap-2">
+                {isRevealed ? (
+                    <Link href={eventURL}>{imageContent}</Link>
+                ) : (
+                    imageContent
+                )}
+                <p className="text-xs md:text-sm lg:text-md xl:text-lg">
+                    {isRevealed ? name : '??? Competition'}
+                </p>
+            </div>
+        </Zoom>
     );
 };
 
