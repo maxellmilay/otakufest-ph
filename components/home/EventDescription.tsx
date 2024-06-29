@@ -49,7 +49,7 @@ const EventDescription = () => {
                             rel="noreferrer"
                             href={ExternalLink.FB}
                             target="_blank"
-                            className="group"
+                            className="group hover:scale-125 duration-200"
                         >
                             <RiFacebookCircleFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
                             <RiFacebookCircleLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
@@ -58,7 +58,7 @@ const EventDescription = () => {
                             rel="noreferrer"
                             href={ExternalLink.TWITTER}
                             target="_blank"
-                            className="group"
+                            className="group hover:scale-125 duration-200"
                         >
                             <RiTwitterFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
                             <RiTwitterLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
@@ -67,7 +67,7 @@ const EventDescription = () => {
                             rel="noreferrer"
                             href={ExternalLink.INSTAGRAM}
                             target="_blank"
-                            className="group"
+                            className="group hover:scale-125 duration-200"
                         >
                             <RiInstagramFill className="h-8 w-8 md:h-12 md:w-12 group-hover:hidden" />
                             <RiInstagramLine className="h-8 w-8 md:h-12 md:w-12 hidden group-hover:block" />
