@@ -1,14 +1,17 @@
 import React from 'react';
 import { GUESTS } from '@/enums/imageUrls';
 import GuestCard from './GuestCard';
+import { Fade } from 'react-awesome-reveal';
 
 const GuestSection = () => {
     return (
         <div className="flex flex-col items-center justify-around text-justify bg-white w-full py-20">
             <div className="flex flex-col text-site-main gap-10">
-                <p className="text-4xl lg:text-6xl font-bold w-full text-center">
-                    GUESTS
-                </p>
+                <Fade>
+                    <p className="text-4xl lg:text-6xl font-bold w-full text-center">
+                        GUESTS
+                    </p>
+                </Fade>
                 {GUESTS.map((guest, index) => {
                     const isLeft = index % 2 == 0;
 

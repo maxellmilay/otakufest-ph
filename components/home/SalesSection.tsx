@@ -1,36 +1,39 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import Routes from '@/enums/routes';
 import SaleItem from './SaleItem';
 import { ETICKETS, PHYS_TICKETS, MERCH } from '@/enums/imageUrls';
 import ExternalLink from '../generics/ExternalLink';
 import InternalLink from '../generics/InternalLink';
+import { Fade} from 'react-awesome-reveal';
 
 const SalesSection = () => {
     return (
         <div className="flex flex-col items-center justify-evenly bg-white w-full py-10 gap-10 md:py-20 px-4 md:px-[10vw]">
-            <div className="flex flex-col text-site-main">
-                <p className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
-                    TICKETS & MERCH
-                </p>
-            </div>
-            <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
-                <p className="text-xl md:text-3xl font-bold w-full">
-                    PRE-ORDERS FOR E-TICKET SALES
-                </p>
-                <p className="mt-4 text-justify">
-                    <b>PRE-ORDERS FOR TICKET SALES HAS NOW BEGUN!</b> Pre-order
-                    your tickets now from <b>June 15</b> to <b>July 31</b> and
-                    skip all the hassle of lining up, so you can fully focus on
-                    getting the most out of OtakuFest &apos;24!
-                    <br />
-                    <br />
-                    For your guidance, <b>Day 1</b> of OtakuFest &apos;24 is on{' '}
-                    <b>Day 17, 2024</b> (Saturday) while <b>Day 2</b> of
-                    OtakuFest &apos;24 is on <b>Day 18, 2024</b> (Sunday).
-                </p>
-            </div>
+            <Fade>
+                <div className="flex flex-col text-site-main">
+                    <p className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
+                        TICKETS & MERCH
+                    </p>
+                </div>
+                <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
+                    <p className="text-xl md:text-3xl font-bold w-full">
+                        PRE-ORDERS FOR E-TICKET SALES
+                    </p>
+                    <p className="mt-4 text-justify">
+                        <b>PRE-ORDERS FOR TICKET SALES HAS NOW BEGUN!</b>{' '}
+                        Pre-order your tickets now from <b>June 15</b> to{' '}
+                        <b>July 31</b> and skip all the hassle of lining up, so
+                        you can fully focus on getting the most out of OtakuFest
+                        &apos;24!
+                        <br />
+                        <br />
+                        For your guidance, <b>Day 1</b> of OtakuFest &apos;24 is
+                        on <b>Day 17, 2024</b> (Saturday) while <b>Day 2</b> of
+                        OtakuFest &apos;24 is on <b>Day 18, 2024</b> (Sunday).
+                    </p>
+                </div>
+            </Fade>
+
             <div className="gap-2 lg:gap-8 w-full text-site-main grid grid-cols-2 lg:grid-cols-3     items-center justify-around text-xs sm:text-sm md:text-md lg:text-xl md:flex-row">
                 {Object.values(ETICKETS).map((currentItem) => (
                     <SaleItem
@@ -45,6 +48,7 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
+
             <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
                 <p className="text-xl md:text-3xl font-bold w-full">
                     MEETUP FOR LIMITED PHYSICAL TICKETS
@@ -85,18 +89,21 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
-                <p className="text-xl md:text-3xl font-bold w-full">
-                    PREORDER EXCLUSIVE #OF24 MERCH
-                </p>
-                <p className="mt-4 text-justify">
-                    Complete your Otakufest experience by preordering these{' '}
-                    <b>LIMITED EDITION</b> Otakufest 2024 merch! Stocks are
-                    limited, so make sure you order RIGHT AWAY! <br /> <br />
-                    All merch preordered online aka via this form shall be
-                    issued E-STUBS instead of physical claim stubs.
-                </p>
-            </div>
+            <Fade>
+                <div className="flex flex-col text-site-main text-xs sm:text-sm md:text-md lg:text-xl px-5">
+                    <p className="text-xl md:text-3xl font-bold w-full">
+                        PREORDER EXCLUSIVE #OF24 MERCH
+                    </p>
+                    <p className="mt-4 text-justify">
+                        Complete your Otakufest experience by preordering these{' '}
+                        <b>LIMITED EDITION</b> Otakufest 2024 merch! Stocks are
+                        limited, so make sure you order RIGHT AWAY! <br />{' '}
+                        <br />
+                        All merch preordered online aka via this form shall be
+                        issued E-STUBS instead of physical claim stubs.
+                    </p>
+                </div>
+            </Fade>
             <div className="gap-2 lg:gap-8 w-full text-site-main grid grid-cols-2 lg:grid-cols-3 items-center justify-around text-xs sm:text-sm md:text-md lg:text-xl md:flex-row">
                 {Object.values(MERCH).map((currentItem) => (
                     <SaleItem
@@ -111,16 +118,18 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
-                For concerns regarding your purchases from Otakufest 2024,
-                consider{' '}
-                <InternalLink
-                    content="reaching out to us"
-                    route={Routes.CONTACT_US}
-                />{' '}
-                or sending us an e-mail at{' '}
-                <ExternalLink content="sales.otakufest@gmail.com" />
-            </span>
+            <Fade >
+                <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
+                    For concerns regarding your purchases from Otakufest 2024,
+                    consider{' '}
+                    <InternalLink
+                        content="reaching out to us"
+                        route={Routes.CONTACT_US}
+                    />{' '}
+                    or sending us an e-mail at{' '}
+                    <ExternalLink content="sales.otakufest@gmail.com" />
+                </span>
+            </Fade>
         </div>
     );
 };

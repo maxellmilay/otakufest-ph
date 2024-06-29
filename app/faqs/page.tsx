@@ -2,6 +2,8 @@ import React from 'react';
 import { OF24_PAN } from '@/enums/imageUrls';
 import Image from 'next/image';
 import { Faq } from '@/components/faqs/FAQs';
+import Routes from '@/enums/routes';
+import Link from 'next/link';
 
 const Faqs = () => {
     return (
@@ -19,7 +21,16 @@ const Faqs = () => {
                         event, ensuring you have all the information you need to
                         make the most of your Otakufest experience. Dive into
                         the details below and get ready for an unforgettable
-                        time at Otakufest!
+                        time at Otakufest! <br></br>
+                        <br></br>
+                        Please read through the FAQ before asking questions! If
+                        you&apos;d like clarifications,{' '}
+                        <Link
+                            href={Routes.CONTACT_US}
+                            className="underline underline-offset-4"
+                        >
+                            message us here!
+                        </Link>
                     </p>
                 </div>
 
