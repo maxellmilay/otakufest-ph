@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>OtakuFest - Chef, what do you think?</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            .container {
+                width: 100%;
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .header-container {
+                background-color: #922424;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+            .header {
+                display: flex;
+                width: fit-content;
+                margin: 0 auto;
+            }
+            .header img {
+                max-width: 150px;
+            }
+            .content {
+                padding: 20px;
+                font-size: 16px;
+                color: #333;
+            }
+            .content h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .content p {
+                margin: 10px 0;
+            }
+            .table-container {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .table-container th,
+            .table-container td {
+                padding: 10px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .footer {
+                text-align: center;
+                padding: 20px;
+                font-size: 14px;
+                color: #777;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-container">
+                <div class="header">
+                    <img
+                        src="https://res.cloudinary.com/dhyoibvtc/image/upload/v1718514125/logo-2024-white_igbjom.png"
+                        alt="OtakuFest"
+                    />
+                    <h1>OTAKUFEST</h1>
+                </div>
+            </div>
+            <div class="content">
+                <h2>Chef, what do you think?</h2>
+                <p>Someone’s cooked up a question for you to respond to!</p>
+                <p>Here’s what was sent:</p>
+                <table class="table-container">
+                    <tr>
+                        <th>Name</th>
+                        <td>{{name}}</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail Address</th>
+                        <td>{{email}}</td>
+                    </tr>
+                    <tr>
+                        <th>Type of Concern</th>
+                        <td>{{type_of_concern}}</td>
+                    </tr>
+                    <tr>
+                        <th>Question</th>
+                        <td>{{question}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 OtakuFest. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>
