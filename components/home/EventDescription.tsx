@@ -11,6 +11,7 @@ import {
     RiTwitterLine,
     RiInstagramLine,
 } from 'react-icons/ri';
+import { FaPeopleRobbery } from 'react-icons/fa6';
 
 const EventDescription = () => {
     return (
