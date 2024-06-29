@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     const { name, email, concern, question } = await request.json();
 
     const htmlTemplate = readFileSync(
-        path.join(__dirname, '../../../../../template/emailTemplate.html'),
+        path.join(process.cwd(), 'template', 'emailTemplate.html'),
         'utf-8'
     );
 
