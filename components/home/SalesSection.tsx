@@ -141,7 +141,7 @@ const SalesSection = () => {
                                 claim stubs.
                             </i>
                         </p>
-                        <div className="flex flex-row justify-evenly rounded-full w-full md:w-1/2 md:w-1/2 p-2 border-site-secondary border-4">
+                        <div className="flex flex-row justify-evenly rounded-full w-full md:w-1/2 p-2 border-site-secondary border-4">
                             <FaCalendarAlt className="size-20" />
                             <span>
                                 Open until <b>July 31</b>
