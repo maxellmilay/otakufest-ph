@@ -104,7 +104,7 @@ export const EventTimer = () => {
             </div>
             <button
                 onClick={handleVisibilityToggle}
-                className={`flex items-center hover:scale-110 duration-500 ${isTimerVisible ? 'justify-end' : 'justify-center'}`}
+                className={`animate-pulse flex items-center hover:scale-110 duration-500 ${isTimerVisible ? 'justify-end' : 'justify-center'}`}
             >
                 <IoMdClock size={30} />
             </button>

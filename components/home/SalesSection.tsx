@@ -7,6 +7,7 @@ import ExternalLink from '../generics/ExternalLink';
 import InternalLink from '../generics/InternalLink';
 import { FaCalendarAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
+import { Fade } from 'react-awesome-reveal';
 
 const SalesSection = () => {
     return (
@@ -157,16 +158,18 @@ const SalesSection = () => {
                     />
                 ))}
             </div>
-            <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
-                For concerns regarding your purchases from Otakufest 2024,
-                consider{' '}
-                <InternalLink
-                    content="reaching out to us"
-                    route={Routes.CONTACT_US}
-                />{' '}
-                or sending us an e-mail at{' '}
-                <ExternalLink content="sales.otakufest@gmail.com" />
-            </span>
+            <Fade>
+                <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
+                    For concerns regarding your purchases from Otakufest 2024,
+                    consider{' '}
+                    <InternalLink
+                        content="reaching out to us"
+                        route={Routes.CONTACT_US}
+                    />{' '}
+                    or sending us an e-mail at{' '}
+                    <ExternalLink content="sales.otakufest@gmail.com" />
+                </span>
+            </Fade>
         </div>
     );
 };
