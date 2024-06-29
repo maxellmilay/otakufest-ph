@@ -2,14 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import { SPONSOR, OF24_PAN } from '@/enums/imageUrls';
 import HomeSponsor from '@/components/home/SponsorImage';
+import { Fade } from 'react-awesome-reveal';
 
 const SponsorSection = () => {
     return (
         <div className="flex flex-col  text-center w-full relative bg-cover bg-center overflow-hidden py-10 md:py-20 bg-theme">
-            <span className="text-site-main text-4xl md:text-6xl font-bold w-full">
-                SPONSORS
-            </span>
-
+            <Fade>
+                <span className="text-site-main text-4xl md:text-6xl font-bold w-full">
+                    SPONSORS
+                </span>
+            </Fade>
             <div className="flex flex-col gap-5 justify-center items-center py-10 font-semibold xs:text-xs sm:text-md lg:text-xl z-10">
                 <div className="flex flex-wrap xs:flex-nowrap gap-2 xs:gap-2 sm:gap-3 md:gap-3 lg:gap-10 justify-center w-full">
                     <div className="flex flex-col gap-5 bg-[#3F0000]/[.38] p-5 rounded-2xl items-center w-[140px] xs:w-[120px] sm:w-[140px] md:w-[160px] lg:w-[240px]">
