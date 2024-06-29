@@ -165,15 +165,19 @@ const SalesSection = () => {
                 ))}
             </div>
             <Fade>
-                <span className="text-site-main text-center text-xs sm:text-sm md:text-md lg:text-xl mt-4">
-                    For concerns regarding your purchases from Otakufest 2024,
-                    consider{' '}
-                    <InternalLink
-                        content="reaching out to us"
-                        route={Routes.CONTACT_US}
-                    />{' '}
-                    or sending us an e-mail at{' '}
-                    <ExternalLink content="sales.otakufest@gmail.com" />
+                <span className="flex flex-col xl:flex-row items-center gap-2 text-site-main text-center text-xs md:text-sm lg:text-md mt-2 md:mt-4">
+                    <p className="flex flex-col sm:flex-row items-center gap-2">
+                        For concerns regarding your purchases from Otakufest
+                        2024, consider{' '}
+                        <InternalLink
+                            content="reaching out to us"
+                            route={Routes.CONTACT_US}
+                        />{' '}
+                    </p>
+                    <p className="flex flex-col sm:flex-row items-center gap-2">
+                        or sending us an e-mail at{' '}
+                        <ExternalLink content="sales.otakufest@gmail.com" />
+                    </p>
                 </span>
             </Fade>
         </div>

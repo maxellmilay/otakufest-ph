@@ -11,33 +11,39 @@ const BoothSection = () => {
                     <p className="text-3xl md:text-4xl 2xl:text-6xl font-bold">
                         BOOTHS
                     </p>
-                    <ul className="w-full md:w-2/3 text-xs sm:text-sm md:text-md lg:text-xl list-none px-5 sm:px-0">
-                        <li className="flex flex-row items-center mb-2">
-                            <IoHeartCircle size={'5vh'} className="mr-2" />
-                            <p className="w-full">
-                                Support local! Registrations for all booths are{' '}
-                                <b>CLOSED</b>.{' '}
-                                <ExternalLink content="Check out our FAQ here if you're a boother!" />
-                            </p>
+                    <ul className="flex flex-col gap-3 lg:gap-2 w-fit text-xs sm:text-sm md:text-md lg:text-xl list-none px-5 sm:px-0">
+                        <li className="flex flex-col lg:flex-row items-center lg:gap-2">
+                            <div className="flex gap-2 items-center w-full lg:w-auto">
+                                <IoHeartCircle size={'5vh'} />
+                                <p>
+                                    Support local! Registrations for all booths
+                                    are CLOSED.
+                                </p>
+                            </div>
+                            <ExternalLink content="Check out our FAQ here if you're a boother!" />
                         </li>
-                        <li className="flex flex-row items-center mb-2">
-                            <IoHeartCircle size={'5vh'} className="mr-2" />
-                            <p className="w-full">
-                                Interested in collaborating, partnering, or
-                                working with us?{' '}
-                                <ExternalLink content="Email us here!" />
-                            </p>
+                        <li className="flex flex-col lg:flex-row items-center lg:gap-2">
+                            <div className="flex gap-2 items-center w-full lg:w-auto">
+                                <IoHeartCircle size={'5vh'} />
+                                <p>
+                                    Interested in collaborating, partnering, or
+                                    working with us?{' '}
+                                </p>
+                            </div>
+                            <ExternalLink content="Email us here!" />
                         </li>
-                        <li className="flex flex-row items-center">
-                            <IoHeartCircle size={'5vh'} className="mr-2" />
-                            <p className="w-full">
-                                Not sure if your products or displays are
-                                suitable for our event?{' '}
-                                <ExternalLink
-                                    content="Check out our detailed content filtering guide!"
-                                    link="https://bit.ly/43W8Rbw"
-                                />
-                            </p>
+                        <li className="flex flex-col lg:flex-row items-center lg:gap-2">
+                            <div className="flex gap-2 items-center w-full lg:w-auto">
+                                <IoHeartCircle size={'5vh'} />
+                                <p>
+                                    Not sure if your products or displays are
+                                    suitable for our event?{' '}
+                                </p>
+                            </div>
+                            <ExternalLink
+                                content="Check out our detailed content filtering guide!"
+                                link="https://bit.ly/43W8Rbw"
+                            />
                         </li>
                     </ul>
                 </Fade>

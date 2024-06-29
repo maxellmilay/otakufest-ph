@@ -8,9 +8,9 @@ interface PropsInterface {
 const ExternalLink = (props: PropsInterface) => {
     const { content, link } = props;
     return (
-        <span className="text-site-main border-2 border-site-main px-3 py-2 rounded-md text-sm">
+        <p className="text-site-main text-center border-2 border-site-main px-3 py-2 rounded-md text-xs xl:text-sm w-fit">
             <a href={link}>{content}</a>
-        </span>
+        </p>
     );
 };
 
