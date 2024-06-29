@@ -5,8 +5,8 @@ import SMTPTransport from 'nodemailer/lib/smtp-transport';
 const transport = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.MAIL_EMAIL,
-        pass: process.env.MAIL_PASSWORD,
+        user: process.env.NEXT_PUBLIC_MAIL_EMAIL,
+        pass: process.env.NEXT_PUBLIC_MAIL_PASSWORD,
     },
 } as SMTPTransport.Options);
 
