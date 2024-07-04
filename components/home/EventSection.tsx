@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import EventImage from './EventImage';
+import EventModal from './EventModal';
 import { EVENTS, PARTNERED_EVENTS } from '@/enums/imageUrls';
-import { Fade} from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const EventSection = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedEvent, setSelectedEvent] = useState(null);
+
+    const openModal = (event: any) => {
+        setSelectedEvent(event);
+        setModalIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setModalIsOpen(false);
+        setSelectedEvent(null);
+    };
+
     return (
         <div className="flex flex-col gap-3 items-center justify-around text-center bg-cover bg-center bg-theme text-site-main w-full p-10 md:p-20">
             <Fade>
@@ -29,14 +43,18 @@ const EventSection = () => {
             </Fade>
             <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
                 {Object.values(EVENTS).map((currentEvent, index) => (
-                    <EventImage
+                    <button
                         key={index + currentEvent.eventName}
-                        imageUrl={currentEvent.imageUrl}
-                        blackImageURL={currentEvent.blackImageUrl}
-                        name={currentEvent.eventName}
-                        eventURL={currentEvent.eventURL}
-                        isRevealed={currentEvent.isRevealed}
-                    />
+                        onClick={() => openModal(currentEvent)}
+                        className="focus:outline-none"
+                    >
+                        <EventImage
+                            imageUrl={currentEvent.imageUrl}
+                            blackImageURL={currentEvent.blackImageUrl}
+                            name={currentEvent.eventName}
+                            isRevealed={currentEvent.isRevealed}
+                        />
+                    </button>
                 ))}
             </div>
             <Fade>
@@ -50,16 +68,26 @@ const EventSection = () => {
 
             <div className="grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 w-full">
                 {Object.values(PARTNERED_EVENTS).map((currentEvent, index) => (
-                    <EventImage
+                    <button
                         key={index + currentEvent.eventName}
-                        imageUrl={currentEvent.imageUrl}
-                        blackImageURL={currentEvent.blackImageUrl}
-                        name={currentEvent.eventName}
-                        eventURL={currentEvent.eventURL}
-                        isRevealed={currentEvent.isRevealed}
-                    />
+                        onClick={() => openModal(currentEvent)}
+                        className="focus:outline-none"
+                    >
+                        <EventImage
+                            imageUrl={currentEvent.imageUrl}
+                            blackImageURL={currentEvent.blackImageUrl}
+                            name={currentEvent.eventName}
+                            isRevealed={currentEvent.isRevealed}
+                        />
+                    </button>
                 ))}
             </div>
+
+            <EventModal
+                event={selectedEvent}
+                isOpen={modalIsOpen}
+                onClose={closeModal}
+            />
         </div>
     );
 };
