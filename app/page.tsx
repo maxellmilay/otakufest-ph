@@ -10,6 +10,7 @@ import SponsorSection from '@/components/home/SponsorSection';
 import BoothSection from '@/components/home/BoothSection';
 import { EventTimer } from '@/components/home/EventTimer';
 
+
 const Home = () => {
     return (
         <>
@@ -45,6 +46,7 @@ const Home = () => {
                 <SponsorSection />
             </section>
             <EventTimer />
+            
         </>
     );
 };
