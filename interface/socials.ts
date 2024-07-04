@@ -5,4 +5,6 @@ interface SocialInterface {
     instagram?: string;
     tiktok?: string;
     twitch?: string;
+    tumblr?: string;
+    website?: string;
 }

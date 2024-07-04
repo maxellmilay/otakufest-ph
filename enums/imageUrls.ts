@@ -1,4 +1,5 @@
 import ExternalUrl from '@/enums/externalUrls';
+import { profile } from 'console';
 
 export const OF24_BACKGROUND =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718507762/2024-custombg_lxqwxq.png';
@@ -362,6 +363,38 @@ export const GUESTS = [
             tiktok: 'https://tiktok.com/@xkiichan',
             twitter: 'https://twitter.com/KitsuiAkira',
             instagram: 'https://instagram.com/kitsuiakira',
+        },
+    },
+];
+
+export const ARTIST_FEATURES = [
+    {
+        name: 'Studio Chiji',
+        description:
+            'Studio Chiji is led by an artist and producer duo from Cebu City. They aspire to share their artworks and crafts towards the world and dedicate passion into making them through grit and "heart"work.',
+        profilePic: '/artists/1_studioChiji/studioChiji_pfp.png',
+        samples: [
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_pfp.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+        ],
+        socials: {
+            instagram: 'www.instagram.com/studio.chiji',
+        },
+    },
+    {
+        name: 'Bacon Berry',
+        description: '',
+        profilePic: '/artists//1_studioChiji/studioChiji_pfp.png',
+        samples: [
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+        ],
+        socials: {
+            facebook: 'https://www.facebook.com/BaconberryArt',
+            twitter: 'https://twitter.com/Bacon__Berry',
+            instagram: 'https://www.instagram.com/bacon_berry/',
         },
     },
 ];
