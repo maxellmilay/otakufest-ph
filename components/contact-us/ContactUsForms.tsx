@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { RiMailSendLine } from 'react-icons/ri';
 import Loader from '../generics/Loader';
+import ContactUs from './ContactUsModal';
 
 interface FormValues {
     name: string;
@@ -20,6 +21,9 @@ export const ContactUsForms = () => {
     });
 
     const [isLoading, setIsLoading] = useState(false);
+    const [isSent, setIsSent] = useState(false);
+    const [isNotSent, setIsNotSent] = useState(false);
+    const [hasConcern, setHasConcern] = useState(true);
 
     const handleChange = (e: any) => {
         const { name, value } = e.target;
@@ -36,20 +40,31 @@ export const ContactUsForms = () => {
             body: JSON.stringify(formData),
         })
             .then((response) => response.json())
-            .then((data) => alert('Concern Sent!'))
-            .catch((error) =>
-                alert('Concern was not sent, there was a problem on our end')
-            )
+            .then((data) => setIsSent(true))
+            .catch((error) => setIsNotSent(true))
             .finally(() => setIsLoading(false));
     };
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
+
         if (!formData.concern) {
-            alert('Please select a concern.');
+            setHasConcern(false);
             return;
         }
         sendEmail();
+    };
+
+    const resetForm = () => {
+        setFormData({
+            name: '',
+            email: '',
+            concern: '',
+            question: '',
+        });
+        setIsSent(false);
+        setIsNotSent(false);
+        setHasConcern(true);
     };
 
     return (
@@ -78,7 +93,7 @@ export const ContactUsForms = () => {
                 <div>
                     <select
                         name="concern"
-                        className="py-2 px-4  w-full rounded-md required bg-white"
+                        className="py-2 px-4 w-full rounded-md required bg-white"
                         value={formData.concern}
                         onChange={handleChange}
                         required
@@ -110,6 +125,14 @@ export const ContactUsForms = () => {
                 </button>
             </form>
             <Loader isLoading={isLoading} />
+            {((!isLoading && (isSent || isNotSent)) || !hasConcern) && (
+                <ContactUs
+                    onClose={resetForm}
+                    isSent={isSent}
+                    isNotSent={isNotSent}
+                    hasConcern={hasConcern}
+                />
+            )}
         </>
     );
 };
