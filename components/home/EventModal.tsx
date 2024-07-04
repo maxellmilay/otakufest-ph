@@ -58,17 +58,21 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                     )}
                 </figure>
                 <div className="text-start pr-3 rounded-lg w-11/12 md:w-1/2 lg:w-[60%]  text-site-secondary">
-                    <h2 className="text-2xl font-bold uppercase">
-                        {event.isRevealed ? event.eventName : '??? Competition'}
-                    </h2>
-                    <p className="mb-6 font-semibold uppercase">
-                        Deadline of Application: {formattedDeadline}
-                    </p>
+                    <div className="inline-block mb-6 ">
+                        <h2 className="mb-1 text-2xl font-bold uppercase">
+                            {event.isRevealed
+                                ? event.eventName
+                                : '??? Competition'}
+                        </h2>
+                        <span className="font-semibold uppercase text-sm  px-2 py-1 rounded-md bg-white text-site-main">
+                            Deadline of Application: {formattedDeadline}
+                        </span>
+                    </div>
                     <p className="font-yaldevi mb-10">{event.description}</p>
                     <div className="flex justify-evenly">
                         <Link
                             href={event.eventURL}
-                            className=" px-8 py-2 rounded border hover:text-site-main hover:bg-white cursor-pointer"
+                            className=" px-8 py-2 rounded border bg-site-secondary text-site-main hover:bg-site-main  hover:text-site-secondary cursor-pointer"
                         >
                             Apply
                         </Link>
