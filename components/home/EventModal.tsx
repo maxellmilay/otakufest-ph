@@ -31,8 +31,8 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-            <div className="flex items-center lg:mt-16 rounded-lg bg-site-main lg:w-[70%] p-5 justify-center space-x-5">
-                <figure className="relative aspect-square  w-28 sm:w-52 md:w-52 lg:w-64 xl:w-[28rem] duration-200 flex justify-center items-center">
+            <div className="flex md:flex-row flex-col items-center mt-16 rounded-lg bg-site-main w-[80%] md:w-[75%] lg:w-[70%] p-5  justify-center md:space-x-5">
+                <figure className="relative aspect-square  w-40 sm:w-52 md:w-56 lg:w-64 xl:w-[28rem] duration-200 flex justify-center items-center">
                     {event.eventName == 'AniMotion! Animation Competition' && (
                         <Image
                             src={
@@ -57,28 +57,30 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                         />
                     )}
                 </figure>
-                <div className="text-start pr-3 rounded-lg w-11/12 md:w-1/2 lg:w-[60%]  text-site-secondary">
+                <div className="rounded-lg w-11/12 md:w-[60%] lg:w-[60%]  text-site-secondary text-center md:text-start">
                     <div className="inline-block mb-6 ">
-                        <h2 className="mb-1 text-2xl font-bold uppercase">
+                        <h2 className="mb-1 text-sm md:text-lg lg:text-2xl font-bold uppercase">
                             {event.isRevealed
                                 ? event.eventName
                                 : '??? Competition'}
                         </h2>
-                        <span className="font-semibold uppercase text-sm  px-2 py-1 rounded-md bg-white text-site-main">
+                        <span className="font-semibold uppercase text-[0.6rem] md:text-[0.6rem] lg:text-xs  px-2 py-1 rounded-md bg-white text-site-main">
                             Deadline of Application: {formattedDeadline}
                         </span>
                     </div>
-                    <p className="font-yaldevi mb-6">{event.description}</p>
-                    <div className="flex justify-around">
+                    <p className="font-yaldevi mb-6 text-[0.6rem] md:text-[0.7rem] lg:text-base">
+                        {event.description}
+                    </p>
+                    <div className="flex justify-around text-[0.6rem] md:text-xs lg:text-base">
                         <Link
                             href={event.eventURL}
-                            className=" w-2/5 text-center py-2 rounded border bg-site-secondary text-site-main hover:bg-site-main  hover:text-site-secondary cursor-pointer"
+                            className=" w-2/5  text-center py-2 rounded border bg-site-secondary text-site-main hover:bg-site-main  hover:text-site-secondary cursor-pointer"
                         >
                             Apply
                         </Link>
                         <button
                             onClick={onClose}
-                            className="w-2/5 text-center px-8 py-2 rounded border hover:text-site-main hover:bg-white cursor-pointer"
+                            className="w-2/5 text-center py-2 rounded border hover:text-site-main hover:bg-white cursor-pointer"
                         >
                             Close
                         </button>
