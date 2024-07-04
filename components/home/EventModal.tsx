@@ -68,17 +68,17 @@ const EventModal: React.FC<EventModalProps> = ({ event, isOpen, onClose }) => {
                             Deadline of Application: {formattedDeadline}
                         </span>
                     </div>
-                    <p className="font-yaldevi mb-10">{event.description}</p>
-                    <div className="flex justify-evenly">
+                    <p className="font-yaldevi mb-6">{event.description}</p>
+                    <div className="flex justify-around">
                         <Link
                             href={event.eventURL}
-                            className=" px-8 py-2 rounded border bg-site-secondary text-site-main hover:bg-site-main  hover:text-site-secondary cursor-pointer"
+                            className=" w-2/5 text-center py-2 rounded border bg-site-secondary text-site-main hover:bg-site-main  hover:text-site-secondary cursor-pointer"
                         >
                             Apply
                         </Link>
                         <button
                             onClick={onClose}
-                            className=" px-8 py-2 rounded border hover:text-site-main hover:bg-white cursor-pointer"
+                            className="w-2/5 text-center px-8 py-2 rounded border hover:text-site-main hover:bg-white cursor-pointer"
                         >
                             Close
                         </button>
