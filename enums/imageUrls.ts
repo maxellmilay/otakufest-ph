@@ -1,4 +1,5 @@
 import ExternalUrl from '@/enums/externalUrls';
+import { profile } from 'console';
 
 export const OF24_BACKGROUND =
     'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718507762/2024-custombg_lxqwxq.png';
@@ -35,6 +36,7 @@ export const OF24_COMING_SOON =
 
 export const EVENTS = {
     SOLO_SKIT: {
+        slug: 'solo-skit',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515389/solo_coskit_m0l3yt.png',
         blackImageUrl:
@@ -45,6 +47,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     DUO_SKIT: {
+        slug: 'duo-skit',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/duo_coskit_qtbaxi.png',
         blackImageUrl:
@@ -55,6 +58,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     SOLO_DUO_ASIAN_GROOVE: {
+        slug: 'solo-duo-asian-groove',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/ags_solo_duo_xbzyna.png',
         blackImageUrl:
@@ -65,6 +69,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     GROUP_ASIAN_GROOVE: {
+        slug: 'group-asian-groove',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/ags_group_qsovxw.png',
         blackImageUrl:
@@ -75,6 +80,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     KARAOKE_JAPANESE_SINGING: {
+        slug: 'karaoke-japanese-singing',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/japsing_nwqgsb.png',
         blackImageUrl:
@@ -85,6 +91,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     ORIGINAL_CHARACTER_DESIGN: {
+        slug: 'original-character-design',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/ocd_llmgxw.png',
         blackImageUrl:
@@ -95,6 +102,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     ONE_SHOT_COMIC: {
+        slug: 'one-shot-comic',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/osc_xdnzab.png',
         blackImageUrl:
@@ -105,6 +113,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     ANIMATION: {
+        slug: 'animation',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/animotion_gif_rg0uj7.gif',
         blackImageUrl:
@@ -115,6 +124,7 @@ export const EVENTS = {
         isRevealed: true,
     },
     COMING_SOON: {
+        slug: undefined,
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/coming_soon_por0sv.png',
         blackImageUrl:
@@ -127,6 +137,7 @@ export const EVENTS = {
 
 export const PARTNERED_EVENTS = {
     SABERSTURM: {
+        slug: 'sabersturm',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515390/sabersturm_szozxk.png',
         blackImageUrl:
@@ -137,6 +148,7 @@ export const PARTNERED_EVENTS = {
         isRevealed: true,
     },
     GUNPLA: {
+        slug: 'gunpla',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/gunpla_inzsrh.png',
         blackImageUrl:
@@ -147,6 +159,7 @@ export const PARTNERED_EVENTS = {
         isRevealed: true,
     },
     YUGIOH: {
+        slug: 'yugioh',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515389/ygo_rtczy8.png',
         blackImageUrl:
@@ -156,6 +169,7 @@ export const PARTNERED_EVENTS = {
         isRevealed: false,
     },
     VANGUARD: {
+        slug: 'vanguard',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/cfv_vvdnnu.png',
         blackImageUrl:
@@ -165,6 +179,7 @@ export const PARTNERED_EVENTS = {
         isRevealed: false,
     },
     DND: {
+        slug: 'dungeons-and-dragons',
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515392/dnd_fvwhpn.png',
         blackImageUrl:
@@ -174,6 +189,7 @@ export const PARTNERED_EVENTS = {
         isRevealed: false,
     },
     COMING_SOON: {
+        slug: undefined,
         imageUrl:
             'https://res.cloudinary.com/dhyoibvtc/image/upload/v1718515391/coming_soon_por0sv.png',
         blackImageUrl:
@@ -362,6 +378,38 @@ export const GUESTS = [
             tiktok: 'https://tiktok.com/@xkiichan',
             twitter: 'https://twitter.com/KitsuiAkira',
             instagram: 'https://instagram.com/kitsuiakira',
+        },
+    },
+];
+
+export const ARTIST_FEATURES = [
+    {
+        name: 'Studio Chiji',
+        description:
+            'Studio Chiji is led by an artist and producer duo from Cebu City. They aspire to share their artworks and crafts towards the world and dedicate passion into making them through grit and "heart"work.',
+        profilePic: '/artists/1_studioChiji/studioChiji_pfp.png',
+        samples: [
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_pfp.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+        ],
+        socials: {
+            instagram: 'www.instagram.com/studio.chiji',
+        },
+    },
+    {
+        name: 'Bacon Berry',
+        description: '',
+        profilePic: '/artists//1_studioChiji/studioChiji_pfp.png',
+        samples: [
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+            '/artists/1_studioChiji/studioChiji_sample1.png',
+        ],
+        socials: {
+            facebook: 'https://www.facebook.com/BaconberryArt',
+            twitter: 'https://twitter.com/Bacon__Berry',
+            instagram: 'https://www.instagram.com/bacon_berry/',
         },
     },
 ];
